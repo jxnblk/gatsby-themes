@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "basic-example",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build"
+  },
+  "dependencies": {
+    "gatsby": "^2.1.19",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  }
+}

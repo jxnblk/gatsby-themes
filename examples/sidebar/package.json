@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "name": "sidebar-example",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build"
+  },
+  "dependencies": {
+    "gatsby": "^2.1.19",
+    "gatsby-theme-sidebar": "^0.0.1",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  }
+}

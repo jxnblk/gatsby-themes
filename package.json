@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "gatsby-themes",
+  "description": "A collection of Gatsby themes",
+  "author": "Brent Jackson <jxnblk@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn workspace typography-system-example start"
+  },
+  "workspaces": [
+    "themes/*",
+    "examples/*"
+  ]
+}
