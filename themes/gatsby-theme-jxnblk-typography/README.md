@@ -1,3 +1,3 @@
 
-# gatsby-theme-x
+# gatsby-theme-jxnblk-typography
 

@@ -14,8 +14,6 @@ module.exports = {
   headerColor: 'inherit',
   includeNormalize: false,
 
-  // blockMarginBottom: 0,
-
   // compass-vertical-rhythm
   rhythmUnit: 'px',
 }

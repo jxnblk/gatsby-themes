@@ -17,6 +17,17 @@ export const Box = styled.div(
   color
 )
 
+export const Layout = props =>
+  <Box
+    {...props}
+    mx='auto'
+    px={3}
+    py={4}
+    css={{
+      maxWidth: '768px',
+    }}
+  />
+
 export const DebugSpace = withTheme(({ theme }) => (
   <pre>
     {theme.space}
