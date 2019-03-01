@@ -24,7 +24,7 @@ export const DebugSpace = withTheme(({ theme }) => (
 ))
 
 // testing
-
+/*
 const { rhythm: r } = vr({
   baseFontSize: '16px',
   baseLineHeight: 1,
@@ -45,3 +45,4 @@ console.log(
   r(8/3),
   r(16/3),
 )
+*/

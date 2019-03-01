@@ -114,6 +114,9 @@ export default ({
         <Sidebar
           width={320}
           open={sidebarOpen}
+          onClick={e => {
+            setSidebarOpen(false)
+          }}
           onDismiss={e => {
             setSidebarOpen(false)
           }}
