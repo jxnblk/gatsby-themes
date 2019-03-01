@@ -26,3 +26,12 @@ From one of the directories in `examples/` run `yarn start` to start the Gatsby 
 [introducing gatsby themes]: https://www.gatsbyjs.org/blog/2018-11-11-introducing-gatsby-themes/
 [update]: https://www.gatsbyjs.org/blog/2019-01-29-themes-update-child-theming-and-component-shadowing/
 [livestream]: https://www.gatsbyjs.org/blog/2019-02-11-gatsby-themes-livestream-and-example/
+
+<!--
+
+## Notes
+
+- jxnblk/typography
+- theme-rebass
+
+-->
