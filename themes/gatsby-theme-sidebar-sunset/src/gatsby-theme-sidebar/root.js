@@ -1,5 +1,6 @@
 import React from 'react'
 import colors from '../colors'
+import HeaderContent from '../header'
 
 export default ({
   Layout,
@@ -19,7 +20,7 @@ export default ({
         color: 'white',
         backgroundColor: colors.chocolate,
       }}>
-      sidebar sunset
+      <HeaderContent />
     </Header>
     <Main>
       <Sidebar

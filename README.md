@@ -35,4 +35,26 @@ From one of the directories in `examples/` run `yarn start` to start the Gatsby 
 - theme-rebass
 - meetup
 
+Compositions:
+- layout
+  - root layout components
+- typography
+  - typography.js globals
+  - typography-system provider
+  - typography components
+- colors
+  - CSS custom properties
+  - ThemeProvider
+  - colors module
+
+Color abstractions
+- text
+- background
+- link
+- border
+- gray/muted
+- primary
+- secondary
+
 -->
+

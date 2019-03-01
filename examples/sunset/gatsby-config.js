@@ -1,5 +1,10 @@
 module.exports = {
   __experimentalThemes: [
-    'gatsby-theme-sidebar-sunset'
+    {
+      resolve: 'gatsby-theme-sidebar-sunset',
+      options: {
+        header: 'hello',
+      }
+    }
   ]
 }
