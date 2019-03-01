@@ -3,6 +3,7 @@ import Container from './container'
 
 export default ({
   maxWidth,
+  padding,
   children,
   ...props
 }) =>
@@ -13,7 +14,9 @@ export default ({
       alignItems: 'center',
       minHeight: 64,
     }}>
-    <Container maxWidth={maxWidth}>
+    <Container
+      padding={padding}
+      maxWidth={maxWidth}>
       {children}
     </Container>
   </footer>

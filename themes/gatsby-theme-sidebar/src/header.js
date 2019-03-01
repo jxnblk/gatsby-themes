@@ -3,6 +3,7 @@ import Container from './container'
 
 export const Header = ({
   maxWidth,
+  padding,
   children,
   height = 64,
   fixed = true,
@@ -27,7 +28,9 @@ export const Header = ({
           left: 0,
           backgroundColor: 'white',
         } : null}>
-        <Container maxWidth={maxWidth}>
+        <Container
+          padding={padding}
+          maxWidth={maxWidth}>
           <div
             css={{
               display: 'flex',

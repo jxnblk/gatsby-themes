@@ -24,14 +24,5 @@ export default ({
       }}
       children={children}
     />
-    /*
-      <main
-        {...props}
-        css={{
-        }}>
-        {children}
-      </main>
-    </Container>
-    */
   )
 }
