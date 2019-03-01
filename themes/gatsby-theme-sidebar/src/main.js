@@ -12,18 +12,26 @@ export default ({
 
   return (
     <Container
+      {...props}
+      as='main'
       padding={0}
-      maxWidth={maxWidth}>
-      <main
-        {...props}
-        css={{
+      maxWidth={maxWidth}
+      css={{
           display: 'flex',
           flex: '1 1 auto',
           width: '100%',
           minWidth: 0,
+      }}
+      children={children}
+    />
+    /*
+      <main
+        {...props}
+        css={{
         }}>
         {children}
       </main>
     </Container>
+    */
   )
 }

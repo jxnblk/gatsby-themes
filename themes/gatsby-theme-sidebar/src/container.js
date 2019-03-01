@@ -1,20 +1,19 @@
-import React from 'react'
+import styled from '@emotion/styled'
 
-export default ({
+export const Container = styled('div')({
+  minWidth: 0,
+  width: '100%',
+  flex: '1 1 auto',
+  marginLeft: 'auto',
+  marginRight: 'auto',
+}, ({ maxWidth, padding }) => ({
   maxWidth,
-  padding = 32,
-  ...props
-}) =>
-  <div
-    {...props}
-    css={{
-      maxWidth,
-      minWidth: 0,
-      width: '100%',
-      flex: '1 1 auto',
-      marginLeft: 'auto',
-      marginRight: 'auto',
-      paddingLeft: padding,
-      paddingRight: padding,
-    }}
-  />
+  paddingLeft: padding,
+  paddingRight: padding,
+}))
+
+Container.defaultProps = {
+  padding: 32,
+}
+
+export default Container

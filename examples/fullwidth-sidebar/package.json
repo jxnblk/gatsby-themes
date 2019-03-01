@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "fullwidth-sidebar-example",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build"
+  },
+  "dependencies": {
+    "gatsby": "^2.1.19",
+    "gatsby-mdx": "^0.4.0",
+    "gatsby-plugin-typography": "^2.2.7",
+    "gatsby-theme-sidebar": "^0.0.1",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-typography": "^0.16.18"
+  }
+}

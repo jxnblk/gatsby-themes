@@ -31,8 +31,6 @@ export const Layout = props => {
           },
           body: {
             margin: 0,
-            fontFamily: 'system-ui, sans-serif',
-            lineHeight: 1.5,
           }
         }}
       />
