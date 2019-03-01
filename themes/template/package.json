@@ -1,0 +1,16 @@
+{
+  "name": "gatsby-theme-x",
+  "description": "",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Brent Jackson <jxnblk@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gatsby-plugin-compile-es6-packages": "^1.0.6"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.1.18",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  }
+}
