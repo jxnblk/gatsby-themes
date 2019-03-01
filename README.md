@@ -5,10 +5,11 @@
 
 A collection of Gatsby themes.
 
-- [gatsby-theme-sidebar](themes/gatsby-theme-sidebar)
-- [gatsby-theme-typography-system](themes/gatsby-theme-typography-system)
+- [gatsby-theme-sidebar](themes/gatsby-theme-sidebar): sidebar layout theme
+- [gatsby-theme-typography-system](themes/gatsby-theme-typography-system): typography.js + styled-system with emotion
+- [gatsby-theme-hello-color](themes/gatsby-theme-hello-color): just for fun
 
-:warning: Themes are currently in beta and these themes are very unstable and likely to change.
+:warning: **Themes are currently in beta and this repo is very unstable and likely to change.**
 
 ## Viewing the examples
 
