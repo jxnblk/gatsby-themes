@@ -3,7 +3,7 @@
 
 :warning: **WIP/Experimental**
 
-A collection of Gatsby themes.
+A WIP collection of experimental Gatsby themes. Use at your own risk :ghost:
 
 - [gatsby-theme-sidebar](themes/gatsby-theme-sidebar): sidebar layout theme
 - [gatsby-theme-typography-system](themes/gatsby-theme-typography-system): typography.js + styled-system with emotion
