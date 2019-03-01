@@ -1,0 +1,47 @@
+import { Box, DebugSpace } from '../components'
+
+# Gatsby Theme Jxnblk Typography
+
+```sh
+npm i gatsby-theme-jxnblk-typography
+```
+
+- System font stack
+- Pure black
+- Powers of two grid
+- Typography.js styles
+
+<DebugSpace />
+
+## Typography Demo
+
+This section is meant to serve as a demonstration of what the typography styles look like in context.
+Ideally, the base typographic styles will work well together when placed in UI boxes that use the styled-system spacing scale and appear generally centered. This should be tested with different base configurations in `@jxnblk/typography` and the conversion of Typography.js themes in `typography-system`.
+
+## Box demo
+
+This section demonstrates using a Box component with styled-system.
+
+<Box p={1} bg='cyan'>p1</Box>
+<Box p={2} bg='magenta'>p2</Box>
+<Box p={3} bg='cyan'>p3</Box>
+<Box p={4} bg='magenta'>p4</Box>
+<Box p={5} bg='cyan'>p5</Box>
+<Box p={6} bg='magenta'>p6</Box>
+<Box p={7} bg='cyan'>p7</Box>
+<Box p={8} bg='magenta'>p8</Box>
+
+## Combination Demo
+
+<Box p={2} bg='magenta'>
+  <h1>Hamburger 1</h1>
+</Box>
+<Box p={2} bg='cyan'>
+  <h2>Hamburger 2</h2>
+</Box>
+<Box p={2} bg='magenta'>
+  <h3>Hamburger 3</h3>
+</Box>
+<Box p={2} bg='cyan'>
+  <h4>Hamburger 4</h4>
+</Box>
