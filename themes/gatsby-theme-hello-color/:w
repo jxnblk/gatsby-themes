@@ -6,31 +6,27 @@ import hello from 'hello-color'
 const BodyStyles = props =>
   <Global
     {...props}
-    styles={theme => console.log(theme) || ({
+    styles={theme => ({
       body: {
-        margin: 0,
         color: theme.color,
         backgroundColor: theme.backgroundColor,
-        transition: 'color, background-color .1s ease-out',
-        '--color': theme.color,
-        '--background': theme.backgroundColor,
+        transition: 'color, background-color .5s ease-out',
       }
     })}
   />
 
-const defaultcolor = 'tomato'
+const defaultcolor = '#0fc'
 
 export const wrapPageElement = ({ element, props }) => {
   const res = hello(defaultcolor)
   const theme = (base = {}) => ({
-    color: defaultcolor,
-    backgroundColor: hello(defaultcolor).color,
-    ...(base.color ? {
+    color: 'tomato',
+    // backgroundColor: hello(defaultcolor).color,
+    ...(base ? {
       color: base.color,
-      backgroundColor: (hello(base.color || defaultcolor) || {}).color,
+      backgroundColor: hello(base.color).color,
     } : {})
   })
-
   return (
     <ThemeProvider theme={theme}>
       <>
