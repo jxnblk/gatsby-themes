@@ -7,6 +7,7 @@
     "build": "gatsby build"
   },
   "dependencies": {
+    "@jxnblk/bikeshed": "^1.0.0-beta.1",
     "gatsby": "^2.1.19",
     "gatsby-theme-hello-color": "^0.0.1",
     "react": "^16.8.3",

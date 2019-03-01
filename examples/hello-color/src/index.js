@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { ThemeProvider } from 'emotion-theming'
+import bikeshed from '@jxnblk/bikeshed'
 import './styles.css'
 
 const Root = props => {
@@ -9,10 +10,11 @@ const Root = props => {
     <ThemeProvider theme={{ color }}>
       <div
         css={{
+          display: 'flex',
+          alignItems: 'center',
           padding: 32,
-          color: 'var(--background)',
-          backgroundColor: 'var(--color)',
         }}>
+        <div css={{ margin: 'auto' }} />
         <label htmlFor='color'>
           Base Color
         </label>
@@ -23,10 +25,26 @@ const Root = props => {
           onChange={e => {
             setColor(e.target.value)
           }}
+          css={{
+            fontFamily: 'inherit',
+            fontSize: 'inherit',
+            padding: 8,
+            marginLeft: 8,
+            appearance: 'none',
+            color: 'inherit',
+            backgroundColor: 'rgba(0, 0, 0, .125)',
+            border: 'none',
+            borderRadius: 6,
+          }}
         />
       </div>
       <div
+        onClick={e => {
+          const next = bikeshed()
+          setColor(next)
+        }}
         css={{
+          userSelect: 'none',
           padding: 32,
         }}>
         {props.children}
