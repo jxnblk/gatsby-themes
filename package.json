@@ -5,7 +5,7 @@
   "author": "Brent Jackson <jxnblk@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "yarn workspace typography-system-example start",
+    "start": "yarn workspace sidebar-sunset-example start",
     "build": "yarn workspace fullwidth-sidebar-example build"
   },
   "workspaces": [
