@@ -1,6 +1,7 @@
 module.exports = {
   __experimentalThemes: [
-    'gatsby-theme-jxnblk-typography'
+    'gatsby-theme-colors',
+    'gatsby-theme-jxnblk-typography',
   ],
   plugins: [
     'gatsby-mdx',

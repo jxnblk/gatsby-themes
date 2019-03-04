@@ -1,0 +1,49 @@
+
+# Gatsby sidebar sunset
+
+---
+
+## Notes
+
+- theme extensions
+  - sunset can import and alter components from sidebar
+  - end user imports sunset components and composes a layout
+    - with content added in JSX
+  - sunset shadows sidebar/root and adds styles
+    - but end user cant shadow sunset/root without removing changes
+
+- ColorProvider
+
+```js
+<ColorProvider
+  colors={{
+    text: '#000',
+    background: '#000',
+    primary: '#07c',
+    secondary: '#47a',
+    // backgrounds/non-text
+    highlight: '#ff9500',
+    // borders/backgrounds
+    muted: '#d6dee3',
+  }}
+  css={{
+  }}>
+</ColorProvider>
+```
+
+### System CSS
+
+```js
+body: {
+  fontFamily: 'sans',
+  color: 'text',
+  backgroundColor: 'background',
+},
+h1: {
+  fontSize: [ 4, 5 ],
+  mt: 1,
+  mb: [
+    3, 4, 5
+  ],
+}
+```
