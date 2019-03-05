@@ -1,0 +1,23 @@
+{
+  "name": "gatsby-theme-jxnblk",
+  "description": "Base theme for minimal Jxnblk sites",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Brent Jackson <jxnblk@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/core": "^10.0.7",
+    "@emotion/styled": "^10.0.7",
+    "@mdx-js/mdx": "^0.20.1",
+    "@mdx-js/tag": "^0.18.0",
+    "emotion-theming": "^10.0.7",
+    "gatsby-mdx": "^0.4.2",
+    "gatsby-plugin-compile-es6-packages": "^1.0.6",
+    "gatsby-plugin-emotion": "^4.0.4"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.1.18",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  }
+}

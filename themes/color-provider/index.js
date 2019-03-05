@@ -37,6 +37,7 @@ export const ColorProvider = ({
         className={className}
         css={theme => console.log(theme) || ({
           ...(typeof css === 'function' ? css(theme) : css),
+          minHeight: '100vh',
           color: get(theme, 'colors.text'),
           backgroundColor: get(theme, 'colors.background'),
           '& a': {
