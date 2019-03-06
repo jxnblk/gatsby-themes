@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn workspace composition-example start",
-    "build": "yarn workspace fullwidth-sidebar-example build"
+    "build": "yarn workspace basic-example build"
   },
   "workspaces": [
     "themes/*",

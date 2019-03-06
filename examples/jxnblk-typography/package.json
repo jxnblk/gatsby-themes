@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "gatsby develop",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "now-build": "gatsby build --prefix-paths"
   },
   "dependencies": {
     "gatsby": "^2.1.19",

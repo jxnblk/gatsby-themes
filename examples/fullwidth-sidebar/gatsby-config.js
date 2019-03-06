@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/examples/fullwidth-sidebar',
   __experimentalThemes: [
     'gatsby-theme-sidebar'
   ],

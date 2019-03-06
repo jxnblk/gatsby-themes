@@ -1,0 +1,26 @@
+
+{
+  "public": true,
+  "version": 2,
+  "name": "gatsby-themes",
+  "builds": [
+    {
+      "src": "examples/www/package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    },
+    {
+      "src": "examples/**/package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    }
+  ],
+  "routes": [
+    { "src": "/examples/(.*)", "dest": "/examples/$1" },
+    { "src": "/(.*)", "dest": "/examples/www/$1" }
+  ]
+}

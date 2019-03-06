@@ -1,6 +1,6 @@
 module.exports = {
-  __experimentalThemes: [
-  ],
+  pathPrefix: '/examples/composition',
+  __experimentalThemes: [],
   plugins: [
     'gatsby-mdx',
     'gatsby-plugin-emotion',

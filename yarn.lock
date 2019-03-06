@@ -4512,6 +4512,20 @@ gatsby-react-router-scroll@^2.0.4:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
+gatsby-theme-jxnblk@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-jxnblk/-/gatsby-theme-jxnblk-0.0.1.tgz#703747b6705537402bc33a958bc664d0aa1b20f1"
+  integrity sha512-TFeyykq85yE3rxZnK0Ku4Nk2bFF8uKEiCZz1RU3qeKgWVxveuMLmkfabRw0XI+JO3ajNOKk62ADHMMZmMu39EA==
+  dependencies:
+    "@emotion/core" "^10.0.7"
+    "@emotion/styled" "^10.0.7"
+    "@mdx-js/mdx" "^0.20.1"
+    "@mdx-js/tag" "^0.18.0"
+    emotion-theming "^10.0.7"
+    gatsby-mdx "^0.4.2"
+    gatsby-plugin-compile-es6-packages "^1.0.6"
+    gatsby-plugin-emotion "^4.0.4"
+
 gatsby@^2.1.19:
   version "2.1.19"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.1.19.tgz#e7a709b91272f25d676c1b97352035f29fdc0256"
