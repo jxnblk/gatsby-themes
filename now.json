@@ -3,6 +3,7 @@
   "public": true,
   "version": 2,
   "name": "gatsby-themes",
+  "alias": "gatsby-themes.now.sh",
   "builds": [
     {
       "src": "examples/www/package.json",
