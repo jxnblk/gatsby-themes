@@ -2,7 +2,7 @@ import React from 'react'
 import Typography from '@styled-system/typography/modern'
 import typography from './typography'
 
-export default props => console.log(props) ||
+export default props =>
   <Typography
     {...typography}
     {...props}>
