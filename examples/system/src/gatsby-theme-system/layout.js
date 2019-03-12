@@ -9,7 +9,6 @@ import {
   Box,
 } from 'gatsby-theme-system'
 
-// const blue = '#07c'
 const blue = '#33e'
 const theme = {
   colors: {

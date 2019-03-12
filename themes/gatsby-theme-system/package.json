@@ -10,7 +10,7 @@
     "@emotion/styled": "^10.0.7",
     "@mdx-js/mdx": "^0.20.3",
     "@mdx-js/tag": "^0.20.3",
-    "@styled-system/typography": "^1.0.0-0",
+    "@styled-system/typography": "^1.0.0-7",
     "emotion-theming": "^10.0.7",
     "gatsby-mdx": "^0.4.2",
     "gatsby-plugin-compile-es6-packages": "^1.0.6",
