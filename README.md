@@ -5,15 +5,13 @@
 
 A WIP collection of experimental Gatsby themes. Use at your own risk :ghost:
 
-- [gatsby-theme-sidebar](themes/gatsby-theme-sidebar): sidebar layout theme
-- [gatsby-theme-typography-system](themes/gatsby-theme-typography-system): typography.js + styled-system with emotion
-- [gatsby-theme-hello-color](themes/gatsby-theme-hello-color): just for fun
+https://gatsby-themes.now.sh
 
 :warning: **Themes are currently in beta and this repo is very unstable and likely to change.**
 
-## Viewing the examples
+## Running the examples locally
 
-To view a demo of these themes, clone this repo and run `yarn` in the root directory.
+Clone this repo and run `yarn` in the root directory.
 From one of the directories in `examples/` run `yarn start` to start the Gatsby development server.
 
 ## Learn more about Gatsby themes
