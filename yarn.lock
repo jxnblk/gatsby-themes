@@ -952,10 +952,10 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@styled-system/typography@^1.0.0-7":
-  version "1.0.0-7"
-  resolved "https://registry.yarnpkg.com/@styled-system/typography/-/typography-1.0.0-7.tgz#9ec2ba64d643bcf2c9cddb5e436d7573c52fe8eb"
-  integrity sha512-RFKOqOxuigqSZKffsNJ82r4/UFVA47gTG47tJRTfgiEkNN3IupS5ymSC79SVLNdKyh6ZY6G4AQUOnZYrVM05HA==
+"@styled-system/typography@^1.0.0-8":
+  version "1.0.0-8"
+  resolved "https://registry.yarnpkg.com/@styled-system/typography/-/typography-1.0.0-8.tgz#94a7b355b8687c239400dbc7b662078af057e457"
+  integrity sha512-bF7RmIqaTOUYVla0u2WnTNm61nkFnRT0kK03UXG/gHTmBnB51zn9nm7PKHMEPIUD9Nf7HA3hVPG1knOIcYO2Ig==
   dependencies:
     lodash.merge "^4.6.1"
     lodash.omit "^4.5.0"

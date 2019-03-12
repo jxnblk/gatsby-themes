@@ -5,6 +5,7 @@ import {
   width,
   fontSize,
 } from 'styled-system'
+import get from 'lodash.get'
 
 export const Box = styled('div')(
   space,
@@ -47,3 +48,52 @@ export const Main = styled(Box)({
   flex: '1 1 auto',
 })
 
+// color abstraction
+//  high-level:
+//    - text
+//    - background
+//    - primary
+//    - secondary
+//    - highlight
+//  mid-level:
+//    - link
+//    - hover
+//    - button
+//      - text
+//      - background
+//      - hover
+//        - text
+//        - background
+//    - pre
+//      - text
+//      - background
+//    - code
+//      - text
+//      - background
+//    - border
+export const getColor = (theme, value, fallback) =>
+  get(theme.colors, value, get(theme.colors, fallback, fallback))
+
+export const ColorScheme = styled('div')(({ theme }) => ({
+  color: getColor(theme, 'text', 'black'),
+  backgroundColor: getColor(theme, 'background', 'white'),
+  a: {
+    color: getColor(theme, 'link', 'primary'),
+    '&:hover': {
+      color: getColor(theme, 'hover', 'secondary'),
+    }
+  },
+  code: {
+    color: getColor(theme, 'code.text', 'secondary'),
+    backgroundColor: getColor(theme, 'code.background', 'muted'),
+  },
+  pre: {
+    color: getColor(theme, 'pre.text', 'secondary'),
+    backgroundColor: getColor(theme, 'pre.background', 'muted'),
+  },
+  hr: {
+    borderColor: getColor(theme, 'border', 'muted'),
+  },
+  // blockquote
+  // heading
+}))

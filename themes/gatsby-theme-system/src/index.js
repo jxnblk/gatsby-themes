@@ -6,9 +6,8 @@ import get from 'lodash.get'
 import merge from 'lodash.merge'
 import { useSiteMetadata } from './hooks'
 // theming
-import ColorScheme from './ColorScheme'
+import { ColorScheme } from './components'
 import modern from '@styled-system/typography/modern'
-import { themes } from '@styled-system/typography'
 import Layout from './layout'
 
 const colors = {
@@ -19,12 +18,17 @@ const colors = {
   // highlight: '',
   muted: '#f0f6f9',
 }
+const fonts = {
+  body: 'system-ui, sans-serif',
+  monospace: 'Menlo, monospace',
+}
 const typography = {
-  ...themes.poppins,
+  ...modern,
   scoped: true,
 }
 
 const theme = userTheme => merge({
+  fonts,
   colors,
   typography,
 }, userTheme)

@@ -151,9 +151,87 @@ export default props => {
 }
 ```
 
+#### Color Abstraction
+
+This theme uses a color abstraction to apply colors to child elements.
+This abstraction works at two levels, depending on the amount of customization you'd like to add to your site.
+
+At a higher level, these colors keys will be used to apply the color scheme to elements:
+
+```js
+// pseudocode
+colors: {
+  text,
+  background,
+  primary,
+  secondary,
+  muted,
+  highlight,
+}
+```
+At a slightly lower level, you can also customize colors according to this schema:
+
+```js
+// pseudocode
+colors: {
+  link,
+  hover,
+  pre: {
+    text,
+    background,
+  },
+  code: {
+    text,
+    background,
+  },
+  border,
+}
+```
+
 ### Typography
 
-Typography style customization is still WIP
+Typography styles are largely provided with the `@styled-system/typography` package. These styles can be completely customized using the `theme.typography` object or by importing a pre-built theme from this package.
+
+```js
+// example theme
+const theme = {
+  typography: {
+    h1: {
+      fontSize: [ 4, 5, 6 ],
+      mt: 4,
+      mb: 2,
+      lineHeight: 1.5,
+    }
+  }
+}
+```
+
+To use a pre-built theme from `@style-system/typography`, import the theme and pass it as `theme.typography` to your ThemeProvider.
+
+```js
+// example pre-built theme
+import poppins from '@styled-system/typography/poppins'
+
+const theme = {
+  typography: poppins,
+}
+```
+
+Themes can also be deeply merged if you'd like to use one as a starting point.
+
+```js
+// example of merging typography themes
+import poppins from '@styled-system/typography/poppins'
+import merge from 'lodash.merge'
+
+const theme = {
+  typography: merge(poppins, {
+    pre: {
+      fontSize: 2,
+    }
+  })
+}
+```
 
 [mdx]: https://mdxjs.com
 [emotion]: https://emotion.sh
