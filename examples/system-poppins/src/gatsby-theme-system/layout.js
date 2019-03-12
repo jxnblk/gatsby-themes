@@ -8,23 +8,20 @@ import {
   Footer,
   Box,
 } from 'gatsby-theme-system'
+import poppins from '@styled-system/typography/poppins'
 
-const blue = '#33e'
 const theme = {
   colors: {
-    blue,
-    text: '#000',
-    background: '#fff',
-    link: blue,
     pre: {
-      text: 'rebeccapurple',
-      background: '#f6f3f9',
+      text: 'white',
+      background: 'rebeccapurple',
     },
     code: {
       text: 'rebeccapurple',
-      background: '#f6f3f9',
+      background: 'transparent',
     },
   },
+  typography: poppins,
 }
 
 export default props => {
@@ -34,12 +31,8 @@ export default props => {
         <Header>
           <Box as='h1'
             fontSize={2}>
-            Gatsby Theme System
+            Gatsby Theme System (Poppins)
           </Box>
-          <Box mx='auto' />
-          <Box as={Link} to='/' color='inherit'>Home</Box>
-          <Box mx={1} />
-          <Box as={Link} to='/freeform' color='inherit'>Demo</Box>
         </Header>
         <Main>
           {props.children}

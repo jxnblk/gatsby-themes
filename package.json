@@ -5,7 +5,7 @@
   "author": "Brent Jackson <jxnblk@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "yarn workspace example-index start"
+    "start": "yarn workspace system-poppins-example start"
   },
   "workspaces": [
     "themes/*",
