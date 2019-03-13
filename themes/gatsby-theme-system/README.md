@@ -233,6 +233,30 @@ const theme = {
 }
 ```
 
+## Theme Options
+
+The following can be passed to the theme's options in `gatsby-config.js`
+
+### `mdxLayouts` (object)
+
+Custom layouts to wrap MDX files
+
+```js
+// example gatsby-config.js
+module.exports = {
+  __experimentalThemes: [
+    {
+      resolve: 'gatsby-theme-system',
+      options: {
+        mdxLayouts: {
+          blog: require.resolve('./src/blog-layout.js'),
+        }
+      }
+    }
+  ]
+}
+```
+
 [mdx]: https://mdxjs.com
 [emotion]: https://emotion.sh
 [styled-system]: https://styled-system.com

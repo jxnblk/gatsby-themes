@@ -24,8 +24,8 @@ const css = {
   heading: theme => ({
     alignSelf: 'center',
     margin: 0,
-    paddingLeft: get(theme, 'space.1'),
-    paddingRight: get(theme, 'space.2'),
+    paddingLeft: get(theme, 'space.3'),
+    paddingRight: get(theme, 'space.3'),
     fontSize: get(theme, 'fontSizes.3'),
   }),
   spacer: {

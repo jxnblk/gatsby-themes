@@ -42,6 +42,7 @@ export default props =>
             color='primary'
             fontSize={3}>
             New York City 2019
+            August 1 - 3 New Museum
           </Box>
           <Box as='p' fontSize={3}>
             Just a pretend conference so please don't try to actually register

@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "clean": "yarn workspaces run clean",
-    "start": "yarn workspace conference-example start"
+    "start": "yarn workspace conference-example start",
+    "build": "yarn workspace system-example build"
   },
   "workspaces": [
     "themes/*",
