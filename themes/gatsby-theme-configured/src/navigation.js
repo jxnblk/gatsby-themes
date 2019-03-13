@@ -101,7 +101,11 @@ export default ({
 }) => {
   const { setMenuOpen } = useThemeContext()
   return (
-    <nav css={css.root({ open })}>
+    <nav
+      onClick={e => {
+        setMenuOpen(false)
+      }}
+      css={css.root({ open })}>
       <ul css={css.ul}>
         {navigation.map(({ name, path }) => (
           <li key={name + path} css={css.li}>

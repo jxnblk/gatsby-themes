@@ -5,6 +5,8 @@ const darkblue = '#05a'
 const lightgray = '#f6f6f9'
 
 const colors = {
+  primary: blue,
+  secondary: darkblue,
   text: black,
   background: 'white',
   link: blue,

@@ -5,6 +5,8 @@ const query = graphql`
   query {
     themeConfig {
       colors {
+        primary
+        secondary
         text
         background
         link

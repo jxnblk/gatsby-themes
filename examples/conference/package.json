@@ -13,9 +13,11 @@
     "@emotion/styled": "^10.0.9",
     "gatsby": "^2.1.19",
     "gatsby-mdx": "^0.4.3",
+    "gatsby-plugin-react-helmet": "^3.0.9",
     "gatsby-theme-configured": "^0.0.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
+    "react-helmet": "^5.2.0",
     "styled-system": "^4.0.4"
   }
 }

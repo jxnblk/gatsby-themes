@@ -9,6 +9,8 @@ import { useBodyStyle } from './hooks'
 
 const css = {
   root: theme => ({
+    paddingTop: get(theme, 'space.2'),
+    paddingBottom: get(theme, 'space.2'),
     display: 'flex',
     color: get(theme, 'colors.header.text'),
     backgroundColor: get(theme, 'colors.header.background'),
@@ -59,12 +61,14 @@ export default ({
 
   return (
     <header css={css.root}>
-      <img
-        src={withPrefix(logo.src)}
-        css={css.logo}
-        width={logo.width}
-        height={logo.height}
-      />
+      {logo.src && (
+        <img
+          src={withPrefix(logo.src)}
+          css={css.logo}
+          width={logo.width}
+          height={logo.height}
+        />
+      )}
       <h1 css={css.heading}>
         {title}
       </h1>
