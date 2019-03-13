@@ -47,7 +47,12 @@ module.exports = {
     },
   ],
   plugins: [
-    'gatsby-mdx',
+    {
+      resolve: 'gatsby-mdx',
+      options: {
+        extensions: [ '.mdx', '.md' ],
+      }
+    },
   ],
   siteMetadata: {
     title: 'Configured Example',
