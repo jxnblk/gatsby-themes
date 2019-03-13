@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Brent Jackson <jxnblk@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf node_modules"
+  },
   "peerDependencies": {
     "gatsby": "^2.1.19",
     "react": "^16.8.3",

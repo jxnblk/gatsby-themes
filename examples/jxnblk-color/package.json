@@ -3,6 +3,7 @@
   "name": "jxnblk-color-example",
   "version": "1.0.0",
   "scripts": {
+    "clean": "rm -rf node_modules",
     "start": "gatsby develop",
     "build": "gatsby build",
     "now-build": "gatsby build --prefix-paths"

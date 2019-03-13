@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "Brent Jackson <jxnblk@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf node_modules"
+  },
   "dependencies": {
     "@emotion/core": "^10.0.9",
     "emotion-theming": "^10.0.9",

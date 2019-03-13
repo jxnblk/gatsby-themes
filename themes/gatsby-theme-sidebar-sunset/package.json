@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "Brent Jackson <jxnblk@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf node_modules"
+  },
   "dependencies": {
     "gatsby-theme-sidebar": "^0.0.1",
     "gatsby-plugin-compile-es6-packages": "^1.0.6"
