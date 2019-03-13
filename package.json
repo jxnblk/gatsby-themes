@@ -5,7 +5,8 @@
   "author": "Brent Jackson <jxnblk@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "yarn workspace configured-example start"
+    "clean": "yarn workspaces run rm -rf node_modules",
+    "start": "yarn workspace conference-example start"
   },
   "workspaces": [
     "themes/*",

@@ -8,6 +8,11 @@ import Main from './main'
 import Footer from './footer'
 import { Context } from './context'
 
+// colors: pre, code, heading, borders,
+// type: headings, pre, code,
+const rootCSS = theme => ({
+})
+
 export default props => {
   const [ menuOpen, setMenuOpen ] = useState(false)
   const config = useThemeConfig()
