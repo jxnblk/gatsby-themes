@@ -1,0 +1,25 @@
+
+# Intro
+
+This theme is completely configuration-driven.
+All colors, typographic styles, header and footer content, and more can be configured with a plain JavaScript object, passed as options to the theme.
+
+```js
+// example gatsby-config.js
+module.exports = {
+  __experimentalThemes: {
+    {
+      resolve: 'gatsby-theme-configured',
+      options: {
+        colors: {
+          text: '#222',
+          background: '#fff',
+        },
+        header: {
+          title: 'Hello',
+        }
+      }
+    },
+  }
+}
+```
