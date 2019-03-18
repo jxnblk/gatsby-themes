@@ -4519,6 +4519,26 @@ gatsby-theme-jxnblk@^0.0.1:
     gatsby-plugin-compile-es6-packages "^1.0.6"
     gatsby-plugin-emotion "^4.0.4"
 
+gatsby-theme-system@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-system/-/gatsby-theme-system-0.0.1.tgz#7e8c2a67260496bc150d223d3b91fd23ab2b238c"
+  integrity sha512-uOeY+krszAf1eqA1U3wrXXx8h66MtI+hvEl5zsNbibM0csv9v7QaDJIRjGjCS0jV68yWFtNnaZFyAlgYfJ7Eug==
+  dependencies:
+    "@emotion/core" "^10.0.7"
+    "@emotion/styled" "^10.0.7"
+    "@mdx-js/mdx" "^0.20.3"
+    "@mdx-js/tag" "^0.20.3"
+    "@styled-system/typography" "^1.0.0-8"
+    emotion-theming "^10.0.7"
+    gatsby-mdx "^0.4.2"
+    gatsby-plugin-compile-es6-packages "^1.0.6"
+    gatsby-plugin-emotion "^4.0.4"
+    gatsby-plugin-react-helmet "^3.0.8"
+    lodash.get "^4.4.2"
+    lodash.merge "^4.6.1"
+    react-helmet "^5.2.0"
+    styled-system "^4.0.1"
+
 gatsby@^2.1.19:
   version "2.1.31"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.1.31.tgz#6f65fc903607292f95a4518f2aeefe791aa9daf4"
