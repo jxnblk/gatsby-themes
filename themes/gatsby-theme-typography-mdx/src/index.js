@@ -14,7 +14,7 @@ const Root = props => {
   )
 }
 
-export const wrapPageElement = ({ element, props }) =>
-  <Root>
+export const wrapRootElement = ({ element, props }) =>
+  <Root theme={theme}>
     {element}
   </Root>

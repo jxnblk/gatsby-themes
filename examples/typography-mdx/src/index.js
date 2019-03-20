@@ -15,6 +15,6 @@ export const Layout = props => {
 
 // theme context not available here
 export const wrapPageElement = ({ element, props }) =>
-  <>
+  <Layout>
     {element}
-  </>
+  </Layout>

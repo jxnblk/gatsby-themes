@@ -6,8 +6,8 @@
   "license": "MIT",
   "scripts": {
     "clean": "yarn workspaces run clean",
-    "start": "yarn workspace fullwidth-sidebar-example start",
-    "build": "yarn workspace system-example build"
+    "start": "yarn workspace typography-mdx-example start",
+    "build": "yarn workspace typography-mdx-example build"
   },
   "workspaces": [
     "themes/*",
