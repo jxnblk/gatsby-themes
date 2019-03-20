@@ -16,7 +16,7 @@
     "gatsby-plugin-compile-es6-packages": "^1.0.6",
     "gatsby-plugin-emotion": "^4.0.4",
     "lodash.merge": "^4.6.1",
-    "typography-system": "^0.0.2",
+    "typography-system": "^0.0.6",
     "typography-theme-fairy-gates": "^0.16.18"
   }
 }

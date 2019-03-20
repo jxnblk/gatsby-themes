@@ -15,7 +15,7 @@
     "emotion-theming": "^10.0.7",
     "gatsby-plugin-compile-es6-packages": "^1.0.6",
     "gatsby-plugin-emotion": "^4.0.4",
-    "typography-system": "^0.0.2"
+    "typography-system": "^0.0.6"
   },
   "peerDependencies": {
     "gatsby": "^2.1.18",
