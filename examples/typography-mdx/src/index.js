@@ -1,5 +1,5 @@
 import React from 'react'
-import { useMDXComponents } from '@mdx-js/tag'
+import { useMDXComponents, MDXProvider } from '@mdx-js/tag'
 import styled from '@emotion/styled'
 
 const Container = styled.div({
@@ -8,15 +8,24 @@ const Container = styled.div({
   padding: 32,
 })
 
+// these can completely override the theme's components
+const customComponents = outerComponents => {
+  return {
+    ...outerComponents,
+    // a: ({ href, ...props }) => <Link to={href} {...props} />,
+  }
+}
+
 export const Layout = props => {
   const { Root, ...components } = useMDXComponents()
-  console.log('Layout', props)
 
   return (
     <Container>
-      <Root>
-        {props.children}
-      </Root>
+      <MDXProvider components={customComponents}>
+        <Root>
+          {props.children}
+        </Root>
+      </MDXProvider>
     </Container>
   )
 }
