@@ -53,7 +53,7 @@ export default props =>
             color='white'
             bg='link'
             fontSize={3}
-            css={theme => console.log(theme) || ({
+            css={theme => ({
               display: 'inline-block',
               fontWeight: 'bold',
               borderRadius: 6,
