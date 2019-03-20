@@ -885,7 +885,7 @@
   resolved "https://registry.yarnpkg.com/@jxnblk/bikeshed/-/bikeshed-1.0.0-beta.1.tgz#d07e6a0209fb427758a5f5e45aa1f54ac05dedcb"
   integrity sha1-0H5qAgn7QndYpfXkWqH1SsBd7cs=
 
-"@mdx-js/mdx@^0.20.1", "@mdx-js/mdx@^0.20.3":
+"@mdx-js/mdx@^0.20.3":
   version "0.20.3"
   resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-0.20.3.tgz#1f32b4a4a0cc176a3192ef51a0a3502cdfdca3f0"
   integrity sha512-IIlssEIPPAqo04krm270ifGjSVPqtTmjlryYGi8/4VXHCdi42l8v2piTJPo2NVc7J+HizY1uxxZb6AeoFsO/Iw==
@@ -921,11 +921,6 @@
     unified "^7.0.0"
     unist-builder "^1.0.1"
     unist-util-visit "^1.3.0"
-
-"@mdx-js/tag@^0.20.3":
-  version "0.20.3"
-  resolved "https://registry.yarnpkg.com/@mdx-js/tag/-/tag-0.20.3.tgz#9e2306040b6469248c45a5f5baf44d0014db0493"
-  integrity sha512-Co3gUFmNDv9z2LjuvLTpTj2NaOSHFxuoZjohcG0YK/KfECO+Ns9idzThMYjfEDe1vAf4c824rqlBYseedJdFNw==
 
 "@mdx-js/tag@^1.0.0-alpha.6":
   version "1.0.0-alpha.6"
@@ -4443,7 +4438,7 @@ gatsby-link@^2.0.16:
     "@types/reach__router" "^1.0.0"
     prop-types "^15.6.1"
 
-gatsby-mdx@^0.4.0, gatsby-mdx@^0.4.2, gatsby-mdx@^0.4.3:
+gatsby-mdx@^0.4.0, gatsby-mdx@^0.4.2:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/gatsby-mdx/-/gatsby-mdx-0.4.3.tgz#7bc84100a553ff1345a8d5d70daddf05e926a4c7"
   integrity sha512-0OHSeEY7iAnv2L/sdu7hOEgcyBoXW7Wz4Z1Vo/qC482Z90vmiXFY5v2rt/97OCtwgMSrEmyVquoqdUXJq+8W0Q==
@@ -4510,6 +4505,11 @@ gatsby-plugin-emotion@^4.0.4, gatsby-plugin-emotion@^4.0.6:
   dependencies:
     "@babel/runtime" "^7.0.0"
     "@emotion/babel-preset-css-prop" "^10.0.5"
+
+gatsby-plugin-google-fonts@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-0.0.4.tgz#dc1402a71f27c3ae6caee10777d10adadf74bd7c"
+  integrity sha512-B9Q+dznk6UX2Fe7QyCTptiuLT+ZLtdFBs1lg5kvaVDyIlesEA2rSQqtB7IkEQflH91JPE4eAEM699JCPy7CFGg==
 
 gatsby-plugin-page-creator@^2.0.10, gatsby-plugin-page-creator@^2.0.9:
   version "2.0.10"
@@ -10030,7 +10030,7 @@ typography-theme-github@^0.16.18:
   dependencies:
     gray-percentage "^2.0.0"
 
-typography-theme-grand-view@^0.16.18:
+typography-theme-grand-view@^0.16.18, typography-theme-grand-view@^0.16.19:
   version "0.16.19"
   resolved "https://registry.yarnpkg.com/typography-theme-grand-view/-/typography-theme-grand-view-0.16.19.tgz#696b1c42f755d0f559b7b671e1705f76e69c658d"
   integrity sha512-D7JsfJ3r29aCERgOD2XhIdwAxOHroBEKzpGwm7nznF9EyO1kioC8+tjROVsSU5YRYvwMqIPdXtmd3h3NLHEe7Q==

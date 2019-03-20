@@ -8,9 +8,8 @@ const Container = styled.div({
   padding: 32,
 })
 
-export const Layout = props => {
+export default props => {
   const { Root, ...components } = useMDXComponents()
-  console.log('Layout', props)
 
   return (
     <Container>
@@ -20,8 +19,3 @@ export const Layout = props => {
     </Container>
   )
 }
-
-export const wrapPageElement = ({ element, props }) =>
-  <>
-    {element}
-  </>

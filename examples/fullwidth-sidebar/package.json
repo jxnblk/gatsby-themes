@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "gatsby": "^2.1.19",
-    "gatsby-mdx": "^0.4.0",
+    "gatsby-mdx": "^0.5.2",
     "gatsby-plugin-typography": "^2.2.7",
     "gatsby-theme-sidebar": "^0.0.1",
     "react": "^16.8.3",

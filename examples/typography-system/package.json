@@ -9,10 +9,10 @@
     "now-build": "gatsby build --prefix-paths"
   },
   "dependencies": {
-    "@mdx-js/mdx": "^0.20.3",
-    "@mdx-js/tag": "^0.20.3",
+    "@mdx-js/mdx": "^1.0.0-alpha.7",
+    "@mdx-js/tag": "^1.0.0-alpha.6",
     "gatsby": "^2.1.19",
-    "gatsby-mdx": "^0.4.0",
+    "gatsby-mdx": "^0.5.2",
     "gatsby-theme-typography-system": "^0.0.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.3"
