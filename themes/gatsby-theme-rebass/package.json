@@ -9,7 +9,7 @@
     "clean": "rm -rf node_modules"
   },
   "dependencies": {
-    "gatsby-mdx": "^0.4.0",
+    "gatsby-mdx": "^0.5.2",
     "gatsby-plugin-compile-es6-packages": "^1.0.6",
     "gatsby-plugin-react-helmet": "^3.0.7",
     "gatsby-plugin-styled-components": "^3.0.6",

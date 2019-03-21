@@ -12,8 +12,5 @@
   "workspaces": [
     "themes/*",
     "examples/*"
-  ],
-  "dependencies": {
-    "@mdx-js/mdx": "^0.20.3"
-  }
+  ]
 }

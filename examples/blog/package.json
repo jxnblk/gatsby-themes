@@ -3,7 +3,7 @@
   "name": "blog-example",
   "version": "1.0.0",
   "scripts": {
-    "clean": "rm -rf node_modules",
+    "clean": "rm -rf node_modules .cache public",
     "start": "gatsby develop",
     "build": "gatsby build",
     "now-build": "gatsby build --prefix-paths"
