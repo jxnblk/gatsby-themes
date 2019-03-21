@@ -11,7 +11,6 @@
   "dependencies": {
     "gatsby": "^2.1.19",
     "gatsby-plugin-emotion": "^4.0.4",
-    "gatsby-theme-colors": "^0.0.1",
     "gatsby-theme-jxnblk-typography": "^0.0.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.3"
