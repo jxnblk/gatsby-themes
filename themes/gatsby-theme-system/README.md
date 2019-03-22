@@ -32,31 +32,25 @@ module.exports = {
 
 MDX allows you to import and use React components directly in markdown.
 The System theme includes support for [MDX][] out of the box, using [Gatsby MDX][].
-Any file with the `.mdx` extension in `src/pages/` will create a page with typographic styles applied with [@styled-system/typography][].
+Any file with the `.mdx` extension in `src/pages/` will be rendered as a page.
 
 To learn more about MDX, head over to the [MDX docs site][mdx].
 
-## Customization
 
-### Metadata
+## Layout Components
 
-To change the site title and description used in the document head, add a `siteMetadata` field to your `gatsby-config.js`.
-
-```js
-// gatsby-config.js
-module.exports = {
-  siteMetadata: {
-    title: 'Hello, World!',
-    description: 'My new Gatsby site',
-  },
-  __experimentalThemes: [
-    'gatsby-theme-system',
-  ],
-}
+```jsx
+import {
+  Typography,
+  ColorScheme,
+  Layout,
+  Header,
+  Main,
+  Footer,
+} from 'gatsby-theme-system'
 ```
 
-### Layout
-
+<!--
 Most customization for this theme can be achieved by "shadowing" the layout component. Shadowing a component in a Gatsby theme means replacing the theme's built-in component with a custom one. To shadow the layout, create a directory with the same name as the theme:
 
 ```sh
@@ -256,6 +250,7 @@ module.exports = {
   ]
 }
 ```
+-->
 
 [mdx]: https://mdxjs.com
 [emotion]: https://emotion.sh

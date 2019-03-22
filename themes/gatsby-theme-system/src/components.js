@@ -1,10 +1,18 @@
+import React from 'react'
 import styled from '@emotion/styled'
+import { Helmet } from 'react-helmet'
+import { Global } from '@emotion/core'
+import { withTheme } from 'emotion-theming'
 import {
   space,
   color,
   width,
   fontSize,
 } from 'styled-system'
+import {
+  typography,
+  reset,
+} from '@styled-system/typography'
 import get from 'lodash.get'
 
 export const Box = styled('div')(
@@ -13,6 +21,43 @@ export const Box = styled('div')(
   fontSize,
   width
 )
+
+const styles = theme => (reset, {
+  '*': { boxSizing: 'border-box' },
+  body: {
+    margin: 0,
+    // color: get(theme, 'colors.text', '#000'),
+    // backgroundColor: get(theme, 'colors.background', '#fff'),
+    // ...(theme.typography.body || {})
+  },
+  // a: { color: get(theme, 'colors.link'), }
+})
+/*
+<Global styles={styles} />
+*/
+
+export const Typography = () =>
+  <>
+    <Global styles={styles} />
+    <Global styles={props => {
+      console.log(typography(props))
+      return typography(props)
+    }} />
+  </>
+
+export const GoogleFonts = withTheme(props => {
+  const { googleFonts } = props.theme.typography || {}
+  if (!googleFonts) return false
+  return (
+    <Helmet>
+      <link
+        rel='stylesheet'
+        href={googleFonts}
+      />
+    </Helmet>
+  )
+})
+
 
 export const Layout = styled(Box)({
   minHeight: '100vh',
@@ -48,52 +93,33 @@ export const Main = styled(Box)({
   flex: '1 1 auto',
 })
 
-// color abstraction
-//  high-level:
-//    - text
-//    - background
-//    - primary
-//    - secondary
-//    - highlight
-//  mid-level:
-//    - link
-//    - hover
-//    - button
-//      - text
-//      - background
-//      - hover
-//        - text
-//        - background
-//    - pre
-//      - text
-//      - background
-//    - code
-//      - text
-//      - background
-//    - border
 export const getColor = (theme, value, fallback) =>
   get(theme.colors, value, get(theme.colors, fallback, fallback))
 
-export const ColorScheme = styled('div')(({ theme }) => ({
-  color: getColor(theme, 'text', 'black'),
-  backgroundColor: getColor(theme, 'background', 'white'),
-  a: {
-    color: getColor(theme, 'link', 'primary'),
-    '&:hover': {
-      color: getColor(theme, 'hover', 'secondary'),
-    }
-  },
-  code: {
-    color: getColor(theme, 'code.text', 'secondary'),
-    backgroundColor: getColor(theme, 'code.background', 'muted'),
-  },
-  pre: {
-    color: getColor(theme, 'pre.text', 'secondary'),
-    backgroundColor: getColor(theme, 'pre.background', 'muted'),
-  },
-  hr: {
-    borderColor: getColor(theme, 'border', 'muted'),
-  },
-  // blockquote
-  // heading
-}))
+export const ColorScheme = () =>
+  <Global
+    styles={theme => ({
+      body: {
+        color: getColor(theme, 'text', 'black'),
+        backgroundColor: getColor(theme, 'background', 'white'),
+      },
+      a: {
+        color: getColor(theme, 'link', 'primary'),
+        '&:hover': {
+          color: getColor(theme, 'hover', 'secondary'),
+        }
+      },
+      code: {
+        color: getColor(theme, 'code.text', 'secondary'),
+        backgroundColor: getColor(theme, 'code.background', 'muted'),
+      },
+      pre: {
+        color: getColor(theme, 'pre.text', 'secondary'),
+        backgroundColor: getColor(theme, 'pre.background', 'muted'),
+      },
+      hr: {
+        borderColor: getColor(theme, 'border', 'muted'),
+      },
+    })}
+  />
+

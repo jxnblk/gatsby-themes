@@ -30,7 +30,7 @@ const theme = outer => merge({}, outer, {
   },
 })
 
-export const SiteLayout = props => {
+export default props => {
   return (
     <ThemeProvider theme={theme}>
       <Typography />
@@ -64,5 +64,3 @@ export const SiteLayout = props => {
     </ThemeProvider>
   )
 }
-
-export default props => props.children

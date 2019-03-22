@@ -1,34 +1,28 @@
+const pkg = require('./package.json')
+
 module.exports = (opts = {}) => {
   const {
-    mdxLayouts = {}
+    mdx = true,
   } = opts
 
   return {
     plugins: [
-      {
+      mdx && ({
         resolve: 'gatsby-mdx',
         options: {
           extensions: ['.mdx', '.md'],
-          defaultLayouts: {
-            default: require.resolve('./src/mdx-layout'),
-            ...mdxLayouts,
-          }
         }
-      },
+      }),
       'gatsby-plugin-emotion',
       'gatsby-plugin-react-helmet',
       {
         resolve: 'gatsby-plugin-compile-es6-packages',
         options: {
           modules: [
-            'gatsby-theme-system',
+            pkg.name
           ]
         }
       },
-    ],
-    siteMetadata: {
-      title: 'gatsby-theme-system',
-      description: '',
-    }
+    ].filter(Boolean),
   }
 }

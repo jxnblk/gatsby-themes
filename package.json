@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "clean": "yarn workspaces run clean",
-    "start": "yarn workspace jxnblk-typography-example start",
+    "start": "yarn workspace system-example start",
     "build": "yarn workspace typography-mdx-example build"
   },
   "workspaces": [
