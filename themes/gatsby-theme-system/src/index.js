@@ -54,6 +54,7 @@ export const Typography = ({
 
 export const GoogleFonts = withTheme(props => {
   const { googleFonts } = props.theme.typography || {}
+  console.log('GoogleFonts', props.theme, googleFonts)
   if (!googleFonts) return false
   return (
     <Helmet>
@@ -67,11 +68,7 @@ export const GoogleFonts = withTheme(props => {
 
 const globalStyles = theme => (reset, {
   '*': { boxSizing: 'border-box' },
-  body: {
-    margin: 0,
-    fontFamily: 'system-ui, sans-serif',
-    lineHeight: 1.5,
-  },
+  body: { margin: 0 },
 })
 
 export const LayoutRoot = styled(Box)({
