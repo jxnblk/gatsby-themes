@@ -38,8 +38,7 @@ const StyledTypography = styled.div(
         scoped: true
       }
     })
-    // props.theme.typography.scoped = true
-    return typography({ theme, ...props })
+    return typography({ theme })
   }
 )
 

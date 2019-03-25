@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { ThemeProvider } from 'emotion-theming'
+import { Global } from '@emotion/core'
 import {
   Layout,
   Typography,
@@ -42,6 +43,15 @@ const theme = {
 export default props => {
   return (
     <ThemeProvider theme={theme}>
+      <Global
+        styles={{
+          body: {
+            fontFamily: 'system-ui, sans-serif',
+            lineHeight: 1.5,
+          }
+        }}
+      />
+      <DebugTheme />
       <ColorScheme />
       <Layout>
         <Header>
