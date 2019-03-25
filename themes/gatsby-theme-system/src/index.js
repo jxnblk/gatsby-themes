@@ -13,11 +13,14 @@ import {
   typography,
   reset,
 } from '@styled-system/typography'
+import merge from 'lodash.merge'
 import get from 'lodash.get'
 import theme from './theme'
 
+const mergeTheme = outer => merge({}, theme, outer)
+
 export const wrapRootElement = ({ element, props }) =>
-  <ThemeProvider theme={theme}>
+  <ThemeProvider theme={mergeTheme}>
     {element}
   </ThemeProvider>
 

@@ -52,10 +52,6 @@ module.exports = {
 
 To learn more about MDX, head over to the [MDX docs site][mdx].
 
-## Theming
-
-By default, the System theme will add a default Emotion theming context to your site.
-
 ## Layout Components
 
 To use the System theme's layout components in your site, import the components from the theme and use them to create custom layouts.
@@ -119,6 +115,25 @@ The layout components also accept these props to customize the appearance:
 - `fontSize`
 - `css`: [Emotion][] prop for adding any other custom styles
 
+## Theming
+
+By default, the System theme will add a default Emotion theming context to your site.
+To customize the theming context, use Emotion's `ThemeProvider` component either directly in your layout or with Gatsby's `wrapRootElement` API.
+
+```jsx
+// example layout
+import React from 'react'
+import { ThemeProvider } from 'emotion-theming'
+import { Layout } from 'gatsby-theme-system'
+import theme from '../theme'
+
+export default props =>
+  <ThemeProvider theme={theme}>
+    <Layout>
+      {props.children}
+    </Layout>
+  </ThemeProvider>
+```
 
 ## ColorScheme
 
@@ -268,6 +283,15 @@ const theme = {
   })
 }
 ```
+
+<!--
+
+TODO:
+
+- [ ] Document full theme object schema
+- [ ] Add note about shadowing `theme.js`
+
+-->
 
 MIT License
 
