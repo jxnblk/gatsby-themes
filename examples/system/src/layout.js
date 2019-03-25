@@ -10,10 +10,19 @@ import {
   Footer,
   Box,
 } from 'gatsby-theme-system'
-import merge from 'lodash.merge'
+
+// for debugging only
+import { ThemeContext } from '@emotion/core'
+import { useContext } from 'react'
+const DebugTheme = props => {
+  const theme = useContext(ThemeContext)
+  console.log(theme)
+  return false
+}
 
 const blue = '#33e'
-const theme = outer => merge({}, outer, {
+// theme can also be functional
+const theme = {
   colors: {
     blue,
     text: '#000',
@@ -28,12 +37,11 @@ const theme = outer => merge({}, outer, {
       background: '#f6f3f9',
     },
   },
-})
+}
 
 export default props => {
   return (
     <ThemeProvider theme={theme}>
-      <Typography />
       <ColorScheme />
       <Layout>
         <Header>
