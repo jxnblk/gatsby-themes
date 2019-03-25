@@ -1,5 +1,4 @@
 import modern from '@styled-system/typography/modern'
-import merge from 'lodash.merge'
 
 const colors = {
   text: '#000',
@@ -14,10 +13,10 @@ const fonts = {
   monospace: 'Menlo, monospace',
 }
 
-export const theme = userTheme => merge({
+export const theme = {
   fonts,
   colors,
   typography: modern,
-}, userTheme)
+}
 
 export default theme

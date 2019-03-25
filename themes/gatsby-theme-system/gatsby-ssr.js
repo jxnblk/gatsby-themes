@@ -1,1 +1,1 @@
-export { wrapPageElement } from './src'
+export * from './gatsby-browser'
