@@ -885,6 +885,24 @@
   resolved "https://registry.yarnpkg.com/@jxnblk/bikeshed/-/bikeshed-1.0.0-beta.1.tgz#d07e6a0209fb427758a5f5e45aa1f54ac05dedcb"
   integrity sha1-0H5qAgn7QndYpfXkWqH1SsBd7cs=
 
+"@mdx-js/mdx@^0.20.3":
+  version "0.20.3"
+  resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-0.20.3.tgz#1f32b4a4a0cc176a3192ef51a0a3502cdfdca3f0"
+  integrity sha512-IIlssEIPPAqo04krm270ifGjSVPqtTmjlryYGi8/4VXHCdi42l8v2piTJPo2NVc7J+HizY1uxxZb6AeoFsO/Iw==
+  dependencies:
+    "@babel/plugin-proposal-object-rest-spread" "^7.3.2"
+    "@babel/plugin-syntax-jsx" "^7.2.0"
+    change-case "^3.0.2"
+    detab "^2.0.0"
+    hast-util-raw "^5.0.0"
+    mdast-util-to-hast "^4.0.0"
+    remark-parse "^6.0.0"
+    remark-squeeze-paragraphs "^3.0.1"
+    to-style "^1.3.3"
+    unified "^7.0.0"
+    unist-builder "^1.0.1"
+    unist-util-visit "^1.3.0"
+
 "@mdx-js/mdx@^1.0.0-alpha.7":
   version "1.0.0-alpha.7"
   resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-1.0.0-alpha.7.tgz#4565e46a58acd02b2891989c7cb00eca953e2a40"
@@ -903,6 +921,11 @@
     unified "^7.0.0"
     unist-builder "^1.0.1"
     unist-util-visit "^1.3.0"
+
+"@mdx-js/tag@^0.20.3":
+  version "0.20.3"
+  resolved "https://registry.yarnpkg.com/@mdx-js/tag/-/tag-0.20.3.tgz#9e2306040b6469248c45a5f5baf44d0014db0493"
+  integrity sha512-Co3gUFmNDv9z2LjuvLTpTj2NaOSHFxuoZjohcG0YK/KfECO+Ns9idzThMYjfEDe1vAf4c824rqlBYseedJdFNw==
 
 "@mdx-js/tag@^1.0.0-alpha.6":
   version "1.0.0-alpha.6"
@@ -4420,6 +4443,32 @@ gatsby-link@^2.0.16:
     "@types/reach__router" "^1.0.0"
     prop-types "^15.6.1"
 
+gatsby-mdx@^0.4.2:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/gatsby-mdx/-/gatsby-mdx-0.4.4.tgz#1297101f6018c6cf03319c6e0acd508a01478fa6"
+  integrity sha512-OOJqN4nQjo0dmfyWGk8R3nOdc2duGYydbxDdjCfFqRLQCxkVvRvAWNqxZG7LzAqdwqRUYW7pRWm9RNrwwttsmw==
+  dependencies:
+    "@babel/plugin-proposal-object-rest-spread" "^7.0.0"
+    debug "^4.0.1"
+    escape-string-regexp "^1.0.5"
+    fs-extra "^7.0.0"
+    gray-matter "^4.0.1"
+    loader-utils "^1.2.3"
+    lodash "^4.17.10"
+    mdast-util-to-string "^1.0.4"
+    mdast-util-toc "^2.0.1"
+    mime "^2.3.1"
+    pretty-bytes "^5.1.0"
+    remark "^9.0.0"
+    retext "^5.0.0"
+    slash "^2.0.0"
+    static-site-generator-webpack-plugin "^3.4.2"
+    strip-markdown "^3.0.1"
+    underscore.string "^3.3.4"
+    unist-util-map "^1.0.4"
+    unist-util-remove "^1.0.1"
+    unist-util-visit "^1.4.0"
+
 gatsby-mdx@^0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/gatsby-mdx/-/gatsby-mdx-0.5.2.tgz#e0c8493cd5ac061d492b501dfea6260bdb0c8524"
@@ -4511,6 +4560,26 @@ gatsby-react-router-scroll@^2.0.6:
     "@babel/runtime" "^7.0.0"
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
+
+gatsby-theme-system@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-system/-/gatsby-theme-system-0.0.2.tgz#ddb66aa92ab774afe79c8156bf8aeeb7ab7dcff4"
+  integrity sha512-6LDGqfez1foNQkndVrM/tlsL+knen4O0SMvMcqVK9/GBmM6lKwIpBoZnmlJw3bL2aJFD51rBOJS+r7I5N2ZpTw==
+  dependencies:
+    "@emotion/core" "^10.0.7"
+    "@emotion/styled" "^10.0.7"
+    "@mdx-js/mdx" "^0.20.3"
+    "@mdx-js/tag" "^0.20.3"
+    "@styled-system/typography" "^1.0.0-8"
+    emotion-theming "^10.0.7"
+    gatsby-mdx "^0.4.2"
+    gatsby-plugin-compile-es6-packages "^1.0.6"
+    gatsby-plugin-emotion "^4.0.4"
+    gatsby-plugin-react-helmet "^3.0.8"
+    lodash.get "^4.4.2"
+    lodash.merge "^4.6.1"
+    react-helmet "^5.2.0"
+    styled-system "^4.0.1"
 
 gatsby@^2.1.19:
   version "2.2.3"

@@ -33,8 +33,13 @@ export const Box = styled('div')(
 
 const StyledTypography = styled.div(
   props => {
-    props.theme.typography.scoped = true
-    return typography(props)
+    const theme = merge({}, get(props, 'theme'), {
+      typography: {
+        scoped: true
+      }
+    })
+    // props.theme.typography.scoped = true
+    return typography({ theme, ...props })
   }
 )
 
