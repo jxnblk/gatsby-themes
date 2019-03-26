@@ -33,10 +33,7 @@ export const Box = styled('div')(
 
 const StyledTypography = styled.div(typography)
 
-export const Typography = ({
-  children,
-  ...props
-}) => !!React.Children.toArray(children).length ? (
+export const Typography = props => !!props.children ? (
   <StyledTypography {...props} />
 ) : (
   <Global styles={typography} />
@@ -44,7 +41,6 @@ export const Typography = ({
 
 export const GoogleFonts = withTheme(props => {
   const { googleFonts } = props.theme.typography || {}
-  console.log('GoogleFonts', props.theme, googleFonts)
   if (!googleFonts) return false
   return (
     <Helmet>

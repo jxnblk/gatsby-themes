@@ -4,7 +4,7 @@ import Layout from './layout'
 
 export default props =>
   <Layout>
-    <Typography scoped>
+    <Typography>
       <Content>
         {props.children}
       </Content>
