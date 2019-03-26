@@ -1,52 +1,45 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
-import { Global } from '@emotion/core'
 import { ThemeProvider, withTheme } from 'emotion-theming'
-import get from 'lodash.get'
-import merge from 'lodash.merge'
-import { useSiteMetadata } from './hooks'
-// theming
-import { ColorScheme } from './components'
-import modern from '@styled-system/typography/modern'
-import Layout from './layout'
-
-const colors = {
-  text: '#000',
-  background: '#fff',
-  primary: '#07c',
-  secondary: '#047',
-  // highlight: '',
-  muted: '#f0f6f9',
-}
-const fonts = {
-  body: 'system-ui, sans-serif',
-  monospace: 'Menlo, monospace',
-}
-const typography = {
-  ...modern,
-  scoped: true,
-}
-
-const theme = userTheme => merge({
-  fonts,
-  colors,
+import styled from '@emotion/styled'
+import { Global } from '@emotion/core'
+import { Helmet } from 'react-helmet'
+import {
+  space,
+  color,
+  width,
+  fontSize,
+} from 'styled-system'
+import {
   typography,
-}, userTheme)
+  reset,
+} from '@styled-system/typography'
+import merge from 'lodash.merge'
+import get from 'lodash.get'
+import theme from './theme'
 
-const styles = theme => ({
-  '*': { boxSizing: 'border-box' },
-  body: {
-    margin: 0,
-    color: get(theme, 'colors.text', '#000'),
-    backgroundColor: get(theme, 'colors.background', '#fff'),
-    ...(theme.typography.body || {})
-  },
-  a: {
-    color: get(theme, 'colors.link'),
-  }
-})
+const mergeTheme = outer => merge({}, theme, outer)
 
-const GoogleFonts = withTheme(props => {
+export const wrapRootElement = ({ element, props }) =>
+  <ThemeProvider theme={mergeTheme}>
+    {element}
+  </ThemeProvider>
+
+export const Box = styled('div')(
+  space,
+  color,
+  fontSize,
+  width
+)
+
+const StyledTypography = styled.div(typography)
+
+export const Typography = props => !!props.children ? (
+  <StyledTypography {...props} />
+) : (
+  <Global styles={typography} />
+)
+
+export const GoogleFonts = withTheme(props => {
   const { googleFonts } = props.theme.typography || {}
   if (!googleFonts) return false
   return (
@@ -59,32 +52,87 @@ const GoogleFonts = withTheme(props => {
   )
 })
 
-const Root = props => {
-  const {
-    title,
-    description
-  } = useSiteMetadata()
+const globalStyles = theme => (reset, {
+  '*': { boxSizing: 'border-box' },
+  body: { margin: 0 },
+})
 
-  return (
-    <Layout {...props}>
-      <ThemeProvider theme={theme}>
-        <Helmet>
-          <title>{title}</title>
-          <meta name='description' content={description} />
-        </Helmet>
-        <GoogleFonts />
-        <Global styles={styles} />
-        <ColorScheme>
-          {props.children}
-        </ColorScheme>
-      </ThemeProvider>
-    </Layout>
-  )
+export const LayoutRoot = styled(Box)({
+  minHeight: '100vh',
+  display: 'flex',
+  flexDirection: 'column',
+})
+
+export const Layout = props =>
+  <>
+    <Global styles={globalStyles} />
+    <GoogleFonts />
+    <LayoutRoot {...props} />
+  </>
+
+export const Header = styled(Box)({
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center',
+})
+
+Header.defaultProps = {
+  as: 'header',
+  px: 4,
+  py: 3,
+  color: 'white',
+  bg: 'black',
 }
 
-export const wrapPageElement = ({ element, props }) =>
-  <Root {...props}>
-    {element}
-  </Root>
+export const Footer = styled(Header)({})
 
-export * from './components'
+Footer.defaultProps = {
+  as: 'footer',
+  px: 4,
+  py: 3,
+  color: 'white',
+  bg: 'black',
+}
+
+export const Main = styled(Box)({
+  flex: '1 1 auto',
+})
+
+export const Content = styled(Box)({
+  maxWidth: 1024,
+})
+Content.defaultProps = {
+  mx: 'auto',
+  p: 4,
+}
+
+export const getColor = (theme, value, fallback) =>
+  get(theme.colors, value, get(theme.colors, fallback, fallback))
+
+export const ColorScheme = () =>
+  <Global
+    styles={theme => ({
+      body: {
+        color: getColor(theme, 'text', 'black'),
+        backgroundColor: getColor(theme, 'background', 'white'),
+      },
+      a: {
+        color: getColor(theme, 'link', 'primary'),
+        '&:hover': {
+          color: getColor(theme, 'hover', 'secondary'),
+        }
+      },
+      code: {
+        color: getColor(theme, 'code.text', 'secondary'),
+        backgroundColor: getColor(theme, 'code.background', 'muted'),
+      },
+      pre: {
+        color: getColor(theme, 'pre.text', 'secondary'),
+        backgroundColor: getColor(theme, 'pre.background', 'muted'),
+      },
+      hr: {
+        borderColor: getColor(theme, 'border', 'muted'),
+      },
+    })}
+  />
+

@@ -2,9 +2,12 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { ThemeProvider } from 'emotion-theming'
 import {
+  ColorScheme,
+  Typography,
   Layout,
   Header,
   Main,
+  Content,
   Footer,
   Box,
 } from 'gatsby-theme-system'
@@ -13,8 +16,8 @@ import poppins from '@styled-system/typography/poppins'
 const theme = {
   colors: {
     pre: {
-      text: 'white',
-      background: 'rebeccapurple',
+      text: 'rebeccapurple',
+      background: '#f6eeff',
     },
     code: {
       text: 'rebeccapurple',
@@ -27,6 +30,8 @@ const theme = {
 export default props => {
   return (
     <ThemeProvider theme={theme}>
+      <ColorScheme />
+      <Typography />
       <Layout>
         <Header>
           <Box as='h1'
@@ -35,7 +40,9 @@ export default props => {
           </Box>
         </Header>
         <Main>
-          {props.children}
+          <Content>
+            {props.children}
+          </Content>
         </Main>
         <Footer
           py={4}

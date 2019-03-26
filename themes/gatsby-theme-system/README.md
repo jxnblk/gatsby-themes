@@ -32,59 +32,32 @@ module.exports = {
 
 MDX allows you to import and use React components directly in markdown.
 The System theme includes support for [MDX][] out of the box, using [Gatsby MDX][].
-Any file with the `.mdx` extension in `src/pages/` will create a page with typographic styles applied with [@styled-system/typography][].
+Any file with the `.mdx` extension in `src/pages/` will be rendered as a page.
 
-To learn more about MDX, head over to the [MDX docs site][mdx].
-
-## Customization
-
-### Metadata
-
-To change the site title and description used in the document head, add a `siteMetadata` field to your `gatsby-config.js`.
+To disable MDX support, set the `mdx` option to `false` in the theme configuration.
 
 ```js
 // gatsby-config.js
 module.exports = {
-  siteMetadata: {
-    title: 'Hello, World!',
-    description: 'My new Gatsby site',
-  },
   __experimentalThemes: [
-    'gatsby-theme-system',
-  ],
+    {
+      resolve: 'gatsby-theme-system',
+      options: {
+        mdx: false,
+      }
+    }
+  ]
 }
 ```
 
-### Layout
+To learn more about MDX, head over to the [MDX docs site][mdx].
 
-Most customization for this theme can be achieved by "shadowing" the layout component. Shadowing a component in a Gatsby theme means replacing the theme's built-in component with a custom one. To shadow the layout, create a directory with the same name as the theme:
+## Layout Components
 
-```sh
-mkdir src/gatsby-theme-system
-```
-
-Next, create a file named `layout.js` in the directory.
+To use the System theme's layout components in your site, import the components from the theme and use them to create custom layouts.
 
 ```jsx
-// src/gatsby-theme-system/layout.js
-import React from 'react'
-
-export default props => {
-  return (
-    <div>
-      {props.children}
-    </div>
-  )
-}
-```
-
-#### Layout Components
-
-The System theme includes several components to customize the page layout.
-You can import these directly into the `layout.js` file to customize via props.
-
-```jsx
-// src/gatsby-theme-system/layout.js
+// example custom layout
 import React from 'react'
 import {
   Layout,
@@ -93,21 +66,36 @@ import {
   Footer,
 } from 'gatsby-theme-system'
 
-export default props => {
-  return (
+export default props =>
+  <>
     <Layout>
       <Header>
-        Hello!
+        Hello, Header!
       </Header>
       <Main>
         {props.children}
       </Main>
       <Footer>
-        © 2019 Me, myself, & I
+        © 2019 Jxnblk
       </Footer>
     </Layout>
-  )
-}
+  </>
+```
+
+This custom layout component can then be imported into any existing page.
+
+```jsx
+// example page
+import React from 'react'
+import Layout from '../layouts/main'
+
+export default props =>
+  <Layout>
+    <h1>Hello</h1>
+    <p>
+      This page has a layout
+    </p>
+  </Layout>
 ```
 
 The `Header` and `Footer` components default to a black background, but the colors for these and the other components can be customized using the `color` and `bg` [styled-system][] props.
@@ -127,14 +115,47 @@ The layout components also accept these props to customize the appearance:
 - `fontSize`
 - `css`: [Emotion][] prop for adding any other custom styles
 
-### Colors
+## Theming
+
+By default, the System theme will add a default Emotion theming context to your site.
+To customize the theming context, use Emotion's `ThemeProvider` component either directly in your layout or with Gatsby's `wrapRootElement` API.
+
+```jsx
+// example layout
+import React from 'react'
+import { ThemeProvider } from 'emotion-theming'
+import { Layout } from 'gatsby-theme-system'
+import theme from '../theme'
+
+export default props =>
+  <ThemeProvider theme={theme}>
+    <Layout>
+      {props.children}
+    </Layout>
+  </ThemeProvider>
+```
+
+## ColorScheme
+
+The `ColorScheme` component can be used to add theme-based global colors to any layout or page.
+
+```jsx
+import React from 'react'
+import { ColorScheme } from 'gatsby-theme-system'
+
+export default props =>
+  <>
+    <ColorScheme />
+    {props.children}
+  </>
+```
 
 Using [Emotion][]'s `ThemeProvider` component, the theme's colors can be customized.
 
 ```jsx
-// src/gatsby-theme-system/layout.js
 import React from 'react'
 import { ThemeProvider } from 'emotion-theming'
+import { ColorScheme } from 'gatsby-theme-system'
 
 const colors = {
   text: '#112',
@@ -145,13 +166,14 @@ const colors = {
 export default props => {
   return (
     <ThemeProvider theme={{ colors }}>
+      <ColorScheme />
       {props.children}
     </ThemeProvider>
   )
 }
 ```
 
-#### Color Abstraction
+### Color Abstraction
 
 This theme uses a color abstraction to apply colors to child elements.
 This abstraction works at two levels, depending on the amount of customization you'd like to add to your site.
@@ -188,9 +210,38 @@ colors: {
 }
 ```
 
-### Typography
 
-Typography styles are largely provided with the `@styled-system/typography` package. These styles can be completely customized using the `theme.typography` object or by importing a pre-built theme from this package.
+## Typography
+
+The `Typography` component can be used to add theme-based typography styles either globally or scoped to a `<div>`
+
+```jsx
+import React from 'react'
+import { Typography } from 'gatsby-theme-system'
+
+// Add typographic styles globally on a page
+export default props =>
+  <>
+    <Typography />
+    {props.children}
+  </>
+```
+
+```jsx
+import React from 'react'
+import { Typography } from 'gatsby-theme-system'
+
+// Add "scoped" typographic styles to child elements
+export default props =>
+  <>
+    <Typography>
+      {props.children}
+    </Typography>
+  </>
+```
+
+The typographic styles are created using [@styled-system/typography][].
+These styles can be completely customized using the `theme.typography` object or by importing a pre-built theme from this package.
 
 ```js
 // example theme
@@ -233,33 +284,20 @@ const theme = {
 }
 ```
 
-## Theme Options
+<!--
 
-The following can be passed to the theme's options in `gatsby-config.js`
+TODO:
 
-### `mdxLayouts` (object)
+- [ ] Document full theme object schema
+- [ ] Add note about shadowing `theme.js`
 
-Custom layouts to wrap MDX files
+-->
 
-```js
-// example gatsby-config.js
-module.exports = {
-  __experimentalThemes: [
-    {
-      resolve: 'gatsby-theme-system',
-      options: {
-        mdxLayouts: {
-          blog: require.resolve('./src/blog-layout.js'),
-        }
-      }
-    }
-  ]
-}
-```
+MIT License
 
 [mdx]: https://mdxjs.com
 [emotion]: https://emotion.sh
 [styled-system]: https://styled-system.com
 [styled system]: https://styled-system.com
 [gatsby mdx]: https://github.com/ChristopherBiscardi/gatsby-mdx
-[@styled-system/typography]: https://github.com/styled-system/styled-system/tree/master/packages/typography
+[@styled-system/typography]: https://styled-system.com/typography

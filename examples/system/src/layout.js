@@ -1,8 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { ThemeProvider } from 'emotion-theming'
+import { Global } from '@emotion/core'
 import {
   Layout,
+  Typography,
+  ColorScheme,
   Header,
   Main,
   Footer,
@@ -10,6 +13,7 @@ import {
 } from 'gatsby-theme-system'
 
 const blue = '#33e'
+// theme can also be functional
 const theme = {
   colors: {
     blue,
@@ -30,6 +34,15 @@ const theme = {
 export default props => {
   return (
     <ThemeProvider theme={theme}>
+      <Global
+        styles={{
+          body: {
+            fontFamily: 'system-ui, sans-serif',
+            lineHeight: 1.5,
+          }
+        }}
+      />
+      <ColorScheme />
       <Layout>
         <Header>
           <Box as='h1'

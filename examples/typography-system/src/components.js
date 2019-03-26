@@ -7,7 +7,6 @@ import {
   color
 } from 'styled-system'
 import { themes } from './themes'
-console.log(themes)
 
 export const Box = styled.div(
   space,
