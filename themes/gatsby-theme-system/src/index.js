@@ -31,22 +31,12 @@ export const Box = styled('div')(
   width
 )
 
-const StyledTypography = styled.div(
-  props => {
-    const theme = merge({}, get(props, 'theme'), {
-      typography: {
-        scoped: true
-      }
-    })
-    console.log(props, theme, typography({ theme }))
-    return typography({ theme })
-  }
-)
+const StyledTypography = styled.div(typography)
 
 export const Typography = ({
-  scoped = false,
+  children,
   ...props
-}) => scoped ? (
+}) => !!React.Children.toArray(children).length ? (
   <StyledTypography {...props} />
 ) : (
   <Global styles={typography} />

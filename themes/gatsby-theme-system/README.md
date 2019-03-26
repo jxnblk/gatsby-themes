@@ -234,7 +234,7 @@ import { Typography } from 'gatsby-theme-system'
 // Add "scoped" typographic styles to child elements
 export default props =>
   <>
-    <Typography scoped>
+    <Typography>
       {props.children}
     </Typography>
   </>
