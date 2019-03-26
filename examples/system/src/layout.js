@@ -12,15 +12,6 @@ import {
   Box,
 } from 'gatsby-theme-system'
 
-// for debugging only
-import { ThemeContext } from '@emotion/core'
-import { useContext } from 'react'
-const DebugTheme = props => {
-  const theme = useContext(ThemeContext)
-  console.log(theme)
-  return false
-}
-
 const blue = '#33e'
 // theme can also be functional
 const theme = {
@@ -51,7 +42,6 @@ export default props => {
           }
         }}
       />
-      <DebugTheme />
       <ColorScheme />
       <Layout>
         <Header>

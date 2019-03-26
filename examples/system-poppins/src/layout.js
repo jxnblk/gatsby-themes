@@ -13,14 +13,6 @@ import {
 } from 'gatsby-theme-system'
 import poppins from '@styled-system/typography/poppins'
 
-import { ThemeContext } from '@emotion/core'
-import { useContext } from 'react'
-const Debug = props => {
-  const theme = useContext(ThemeContext)
-  console.log(theme)
-  return false
-}
-
 const theme = {
   colors: {
     pre: {
@@ -40,7 +32,6 @@ export default props => {
     <ThemeProvider theme={theme}>
       <ColorScheme />
       <Typography />
-      <Debug />
       <Layout>
         <Header>
           <Box as='h1'
