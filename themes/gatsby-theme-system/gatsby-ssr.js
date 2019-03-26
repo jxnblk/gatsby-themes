@@ -1,1 +1,1 @@
-export * from './gatsby-browser'
+export { wrapRootElement } from './src'
