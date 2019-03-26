@@ -1,7 +1,7 @@
 {
   "name": "gatsby-theme-system",
   "description": "A minimalist Gatsby theme based on constraint-based design principles",
-  "version": "0.0.3-3",
+  "version": "0.0.3-4",
   "main": "index.js",
   "author": "Brent Jackson <jxnblk@gmail.com>",
   "license": "MIT",
