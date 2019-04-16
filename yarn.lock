@@ -890,7 +890,28 @@
     signedsource "^1.0.0"
     yargs "^9.0.0"
 
-"@mdx-js/mdx@^1.0.0-alpha.7", "@mdx-js/mdx@^1.0.0-rc.0":
+"@mdx-js/mdx@^1.0.0":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-1.0.7.tgz#0065134970daea7094b0e896282a07f9c0ff6726"
+  integrity sha512-VOxe1uCWN1yMLX8R9a0I2COuadH0V61zaX5UcnGz+pML5b3SAHz1OjD6vEMC+ID3SeL4cKdomwMF+JT4lekWyw==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.0.0"
+    "@babel/plugin-syntax-jsx" "^7.2.0"
+    "@babel/plugin-syntax-object-rest-spread" "^7.2.0"
+    change-case "^3.0.2"
+    detab "^2.0.0"
+    hast-util-raw "^5.0.0"
+    lodash.uniq "^4.5.0"
+    mdast-util-to-hast "^4.0.0"
+    remark-mdx "^1.0.2"
+    remark-parse "^6.0.0"
+    remark-squeeze-paragraphs "^3.0.1"
+    to-style "^1.3.3"
+    unified "^7.0.0"
+    unist-builder "^1.0.1"
+    unist-util-visit "^1.3.0"
+
+"@mdx-js/mdx@^1.0.0-alpha.7":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-1.0.6.tgz#95edb662a637e8325e80e9a21cb686277a4d35de"
   integrity sha512-cB+/iwMgv8vPytc+R1FnE58Cj3tWbbx+3q9J+diBAFTQOPOLL8/ult4cF8U2O4SwNjpHRRaDiSyr/+JdeQH5kg==
@@ -911,7 +932,7 @@
     unist-builder "^1.0.1"
     unist-util-visit "^1.3.0"
 
-"@mdx-js/react@^1.0.0-rc.0":
+"@mdx-js/react@^1.0.0":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@mdx-js/react/-/react-1.0.6.tgz#59bc131b68cc4f1a246d1e2b79f1223a897e6b65"
   integrity sha512-y7Oua/TqZ+2JxRP7Skdno6SPuRnStAgk5LVFLcsowlhu2h6WuUfVI0HvL0KVouCW030v95qDAiLZDVhBiuDSNQ==
@@ -4526,6 +4547,11 @@ gatsby-plugin-emotion@^4.0.4, gatsby-plugin-emotion@^4.0.6:
   dependencies:
     "@babel/runtime" "^7.0.0"
     "@emotion/babel-preset-css-prop" "^10.0.5"
+
+gatsby-plugin-google-fonts@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-0.0.4.tgz#dc1402a71f27c3ae6caee10777d10adadf74bd7c"
+  integrity sha512-B9Q+dznk6UX2Fe7QyCTptiuLT+ZLtdFBs1lg5kvaVDyIlesEA2rSQqtB7IkEQflH91JPE4eAEM699JCPy7CFGg==
 
 gatsby-plugin-page-creator@^2.0.12:
   version "2.0.12"
