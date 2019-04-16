@@ -1,0 +1,28 @@
+{
+  "name": "gatsby-theme-conference",
+  "description": "",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Brent Jackson <jxnblk@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "start": "gatsby develop"
+  },
+  "dependencies": {
+    "gatsby-plugin-compile-es6-packages": "^1.0.6",
+    "gatsby-plugin-page-creator": "^2.0.12",
+    "gatsby-source-filesystem": "^2.0.29",
+    "gatsby-transformer-yaml": "^2.1.11"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.1.18",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  },
+  "devDependencies": {
+    "gatsby": "^2.3.23",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
