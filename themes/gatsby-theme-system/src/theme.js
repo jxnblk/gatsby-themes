@@ -1,22 +1,21 @@
-import modern from '@styled-system/typography/modern'
-
-const colors = {
-  text: '#000',
-  background: '#fff',
-  primary: '#07c',
-  secondary: '#047',
-  muted: '#f0f6f9',
-}
+import colors from './colors'
+import styles from './styles'
 
 const fonts = {
   body: 'system-ui, sans-serif',
   monospace: 'Menlo, monospace',
 }
 
+const lineHeights = {
+  body: 1.5,
+  heading: 1.25,
+}
+
 export const theme = {
-  fonts,
   colors,
-  typography: modern,
+  fonts,
+  lineHeights,
+  styles,
 }
 
 export default theme
