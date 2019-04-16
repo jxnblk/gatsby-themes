@@ -1,2 +1,0 @@
-
-# gatsby-theme-hello-color

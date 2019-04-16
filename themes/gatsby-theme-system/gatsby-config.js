@@ -14,12 +14,12 @@ module.exports = (opts = {}) => {
         }
       }),
       'gatsby-plugin-emotion',
-      'gatsby-plugin-react-helmet',
       {
         resolve: 'gatsby-plugin-compile-es6-packages',
         options: {
           modules: [
-            pkg.name
+            pkg.name,
+            'theme-ui',
           ]
         }
       },

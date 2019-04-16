@@ -1,7 +1,7 @@
 {
   "name": "gatsby-theme-system",
   "description": "A minimalist Gatsby theme based on constraint-based design principles",
-  "version": "0.0.3-7",
+  "version": "0.0.4",
   "main": "index.js",
   "author": "Brent Jackson <jxnblk@gmail.com>",
   "license": "MIT",
@@ -11,18 +11,14 @@
   "dependencies": {
     "@emotion/core": "^10.0.7",
     "@emotion/styled": "^10.0.7",
-    "@mdx-js/mdx": "^1.0.0-alpha.7",
-    "@mdx-js/tag": "^1.0.0-alpha.6",
-    "@styled-system/typography": "^1.0.0-9",
+    "@mdx-js/mdx": "^1.0.0",
+    "@mdx-js/react": "^1.0.0",
     "emotion-theming": "^10.0.7",
-    "gatsby-mdx": "^0.5.2",
+    "gatsby-mdx": "^0.6.2",
     "gatsby-plugin-compile-es6-packages": "^1.0.6",
     "gatsby-plugin-emotion": "^4.0.4",
-    "gatsby-plugin-react-helmet": "^3.0.8",
-    "lodash.get": "^4.4.2",
-    "lodash.merge": "^4.6.1",
-    "react-helmet": "^5.2.0",
-    "styled-system": "^4.0.1"
+    "styled-system": "^4.0.1",
+    "theme-ui": "^0.0.6"
   },
   "peerDependencies": {
     "gatsby": "^2.1.18",

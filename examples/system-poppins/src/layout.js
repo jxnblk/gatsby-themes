@@ -1,61 +1,38 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { ThemeProvider } from 'emotion-theming'
 import {
-  ColorScheme,
-  Typography,
+  css,
   Layout,
   Header,
   Main,
-  Content,
+  Container,
   Footer,
   Box,
+  NavLink,
 } from 'gatsby-theme-system'
-import poppins from '@styled-system/typography/poppins'
 
-const theme = {
-  colors: {
-    pre: {
-      text: 'rebeccapurple',
-      background: '#f6eeff',
-    },
-    code: {
-      text: 'rebeccapurple',
-      background: 'transparent',
-    },
-  },
-  typography: poppins,
-}
-
-export default props => {
-  return (
-    <ThemeProvider theme={theme}>
-      <ColorScheme />
-      <Typography />
-      <Layout>
-        <Header>
-          <Box as='h1'
-            fontSize={2}>
-            Gatsby Theme System (Poppins)
-          </Box>
-        </Header>
-        <Main>
-          <Content>
-            {props.children}
-          </Content>
-        </Main>
-        <Footer
-          py={4}
-          fontSize={1}>
-          <a href='https://github.com/jxnblk/gatsby-themes'>GitHub</a>
-          <Box mx={1} />
-          <a href='https://jxnblk.com'>Made by Jxnblk</a>
-          <Box mx='auto' />
-          <Box>
-            © 2019 Jxnblk
-          </Box>
-        </Footer>
-      </Layout>
-    </ThemeProvider>
-  )
-}
+export default props =>
+  <Layout
+    css={css({
+      fontFamily: 'Poppins, sans-serif',
+    })}>
+    <Header>
+      <NavLink as={Link} to='/'>
+        Gatsby Theme System (Poppins)
+      </NavLink>
+    </Header>
+    <Main>
+      <Container>
+        {props.children}
+      </Container>
+    </Main>
+    <Footer>
+      <NavLink href='https://github.com/jxnblk/gatsby-themes'>GitHub</NavLink>
+      <Box mx={1} />
+      <NavLink href='https://jxnblk.com'>Made by Jxnblk</NavLink>
+      <Box mx='auto' />
+      <Box>
+        © 2019 Jxnblk
+      </Box>
+    </Footer>
+  </Layout>
