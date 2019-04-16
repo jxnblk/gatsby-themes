@@ -1,5 +1,5 @@
 import { graphql } from 'gatsby'
-import Landing from '../components/landing'
+import Landing from '../layouts/index'
 
 export default Landing
 
@@ -30,11 +30,19 @@ export const pageQuery = graphql`
     allScheduleYaml {
       edges {
         node {
-          date
-          time
+          date(formatString: "ddd, MMM Do h:mm a")
           title
           description
           speaker
+        }
+      }
+    }
+    allMcYaml {
+      edges {
+        node {
+          name
+          bio
+          image
         }
       }
     }

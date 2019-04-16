@@ -1,5 +1,5 @@
 import { graphql } from 'gatsby'
-import Schedule from '../components/schedule'
+import Schedule from '../layouts/schedule'
 
 export default Schedule
 
@@ -8,8 +8,7 @@ export const pageQuery = graphql`
     allScheduleYaml {
       edges {
         node {
-          date
-          time
+          date(formatString: "ddd, MMM Do h:mm a")
           title
           description
           speaker

@@ -1,5 +1,5 @@
 import { graphql } from 'gatsby'
-import Speakers from '../components/speakers'
+import Speakers from '../layouts/speakers'
 
 export default Speakers
 
