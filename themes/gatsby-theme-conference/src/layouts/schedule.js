@@ -1,5 +1,5 @@
 import React from 'react'
-import { Styled } from 'theme-ui'
+import { Styled, css } from 'theme-ui'
 import { Container } from 'theme-ui/layout'
 import groupBy from 'lodash.groupby'
 import Layout from '../components/layout'
@@ -15,7 +15,10 @@ export default ({
   return (
     <Layout>
       <Container>
-        <Styled.h1>
+        <Styled.h1
+          css={css({
+            mb: 5,
+          })}>
           Schedule
         </Styled.h1>
         {Object.keys(days).map(date => (
