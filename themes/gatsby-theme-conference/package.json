@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-conference",
-  "description": "",
+  "description": "A Gatsby theme for creating conference sites",
   "version": "0.0.1",
   "main": "index.js",
   "author": "Brent Jackson <jxnblk@gmail.com>",
