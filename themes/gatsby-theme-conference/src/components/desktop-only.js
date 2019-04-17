@@ -3,8 +3,9 @@ import { jsx } from '@emotion/core'
 
 export default props => {
   const children = React.Children.toArray(props.children)
-    .map(child => {
+    .map((child, i) => {
       return jsx(child.type, {
+        key: i,
         ...child.props,
         css: theme => ({
           [`@media screen and (max-width: ${theme.breakpoints[1]})`]: {

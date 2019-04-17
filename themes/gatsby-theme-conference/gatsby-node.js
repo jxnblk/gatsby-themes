@@ -17,7 +17,8 @@ exports.onPreBootstrap = ({ store }) => {
   // todo: find a better way to bootstrap site data
   const src = path.join(__dirname, 'src/data')
   const dest = path.resolve('src/data')
-  if (src !== dest) {
+  const files = fs.readdirSync(dest)
+  if (!files.length && src !== dest) {
     fs.copySync(src, dest)
   }
 }
