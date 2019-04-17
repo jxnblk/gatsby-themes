@@ -13,7 +13,7 @@ export default props => {
   return (
     <Box
       {...props}
-      py={[5, 6, 7]}>
+      py={[5, 6]}>
       <Container>
         <Styled.h1
           css={css({

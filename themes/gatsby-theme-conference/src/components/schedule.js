@@ -2,36 +2,48 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { Styled } from 'theme-ui'
 import { Box, Container } from 'theme-ui/layout'
+import groupBy from 'lodash.groupby'
 import List from './list'
 import SectionHeading from './section-heading'
 
 export default ({
   schedule = []
-}) =>
-  <Box
-    id='schedule'
-    py={5}>
-    <Container>
-      <SectionHeading>
-        Schedule
-      </SectionHeading>
-      <List>
-        {schedule.map(item => (
-          <li key={item.date + item.time}>
-            {item.date}
+}) => {
+  const days = groupBy(schedule, 'date')
+
+  return (
+    <Box
+      id='schedule'
+      py={5}>
+      <Container>
+        <SectionHeading>
+          Schedule
+        </SectionHeading>
+        {Object.keys(days).map(date => (
+          <div key={date}>
             <Styled.h3>
-              {item.time}
+              {date}
             </Styled.h3>
-            <Styled.p>
-              {item.title}
-            </Styled.p>
-          </li>
+            <List>
+              {days[date].map(item => (
+                <li key={item.time}>
+                  <Styled.h4>
+                    {item.time}
+                  </Styled.h4>
+                  <Styled.p>
+                    {item.title}
+                  </Styled.p>
+                </li>
+              ))}
+            </List>
+          </div>
         ))}
-      </List>
-      <Styled.a
-        as={Link}
-        to='/schedule'>
-        View full schedule
-      </Styled.a>
-    </Container>
-  </Box>
+        <Styled.a
+          as={Link}
+          to='/schedule'>
+          View full schedule
+        </Styled.a>
+      </Container>
+    </Box>
+  )
+}

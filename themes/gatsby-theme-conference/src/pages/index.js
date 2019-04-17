@@ -62,9 +62,13 @@ export const pageQuery = graphql`
     allMcYaml {
       edges {
         node {
+          id
           name
           bio
           image
+          company
+          twitter
+          github
         }
       }
     }
@@ -73,6 +77,9 @@ export const pageQuery = graphql`
         title
         address
         description
+        url
+        mapURL
+        image
       }
     }
   }

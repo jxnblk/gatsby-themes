@@ -6,7 +6,6 @@ export default props =>
     {...props}
     css={css({
       display: 'inline-block',
-      color: 'inherit',
       textDecoration: 'none',
       whiteSpace: 'nowrap',
       flex: 'none',
@@ -16,5 +15,9 @@ export default props =>
       color: 'background',
       bg: 'primary',
       borderRadius: 4,
+      '&:hover': {
+        color: 'background',
+        bg: 'secondary',
+      }
     })}
   />

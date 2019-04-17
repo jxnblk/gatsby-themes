@@ -10,6 +10,7 @@ export default {
     text: '#000',
     background: '#fff',
     primary: '#33e',
+    secondary: '#11a',
   },
   fonts: {
     body: 'system-ui, sans-serif',
@@ -33,6 +34,7 @@ export default {
     },
     h3: {
       ...heading,
+      fontSize: [3, 4],
     },
     h4: {
       ...heading,
@@ -46,6 +48,12 @@ export default {
     p: {
       mt: 0,
       mb: 4,
+    },
+    a: {
+      color: 'primary',
+      '&:hover': {
+        color: 'secondary',
+      }
     },
   }
 }

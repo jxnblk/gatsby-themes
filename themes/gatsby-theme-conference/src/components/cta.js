@@ -1,5 +1,4 @@
 import React from 'react'
-import { Styled } from 'theme-ui'
 import { Box, Container } from 'theme-ui/layout'
 import Button from './button'
 

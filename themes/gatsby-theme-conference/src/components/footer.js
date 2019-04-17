@@ -20,13 +20,13 @@ export default props => {
           <List>
             <li><NavLink as={Link} to='/speakers'>Speakers</NavLink></li>
             <li><NavLink as={Link} to='/schedule'>Schedule</NavLink></li>
-            <li><NavLink href='#venue'>Venue</NavLink></li>
-            <li><NavLink href='#sponsors'>Sponsors</NavLink></li>
+            <li><NavLink as={Link} to='/#venue'>Venue</NavLink></li>
+            <li><NavLink as={Link} to='/#sponsors'>Sponsors</NavLink></li>
           </List>
         </Box>
         <Box width={[1, 1/3]}>
           <List>
-            <li><NavLink href='#purchase'>Tickets</NavLink></li>
+            <li><NavLink as={Link} to='/#purchase'>Tickets</NavLink></li>
             <li><NavLink as={Link} to='/code-of-conduct'>Code of Conduct</NavLink></li>
             <li><NavLink as={Link} to='/scholarship'>Scholarship</NavLink></li>
             <li><NavLink as={Link} to='/privacy-policy'>Privacy Policy</NavLink></li>
