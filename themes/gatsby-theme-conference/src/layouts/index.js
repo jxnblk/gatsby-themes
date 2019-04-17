@@ -9,23 +9,18 @@ import Schedule from '../components/schedule'
 import CTA from '../components/cta'
 
 export default ({
-  data,
-}) => {
-  const speakers = data.allSpeakersYaml.edges.map(edge => edge.node)
-  const schedule = data.allScheduleYaml.edges.map(edge => edge.node)
-  const sponsors = data.allSponsorsYaml.edges.map(edge => edge.node)
-  const mcs = data.allMcYaml.edges.map(edge => edge.node)
-  const { venue } = data.dataYaml
-
-  return (
-    <Layout>
-      <Banner />
-      <Speakers speakers={speakers} />
-      <Venue {...venue} />
-      <Schedule schedule={schedule} />
-      <MCs mcs={mcs} />
-      <Sponsors sponsors={sponsors} />
-      <CTA />
-    </Layout>
-  )
-}
+  speakers,
+  schedule,
+  sponsors,
+  mcs,
+  venue
+}) =>
+  <Layout>
+    <Banner />
+    <Speakers speakers={speakers} />
+    <Venue {...venue} />
+    <Schedule schedule={schedule} />
+    <MCs mcs={mcs} />
+    <Sponsors sponsors={sponsors} />
+    <CTA />
+  </Layout>

@@ -22,7 +22,7 @@
     "gatsby-transformer-yaml": "^2.1.11",
     "mkdirp": "^0.5.1",
     "react-feather": "^1.1.6",
-    "theme-ui": "^0.0.6"
+    "theme-ui": "^0.0.8"
   },
   "peerDependencies": {
     "gatsby": "^2.1.18",

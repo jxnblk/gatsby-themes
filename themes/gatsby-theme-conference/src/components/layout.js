@@ -33,10 +33,7 @@ export default props =>
     </UI.Main>
     <UI.Footer
       css={css({
-        px: 3,
         py: 3,
-        alignItems: 'center',
-        flexWrap: 'wrap',
       })}>
       <Footer />
     </UI.Footer>

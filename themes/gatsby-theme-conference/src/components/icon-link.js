@@ -2,17 +2,19 @@ import React from 'react'
 import { Styled, css } from 'theme-ui'
 
 export default props =>
-  <Styled.a
+  <Styled
     {...props}
     css={css({
       display: 'inline-block',
+      p: 2,
       color: 'inherit',
       textDecoration: 'none',
-      fontWeight: 'bold',
-      px: 3,
-      py: 3,
-      color: 'background',
-      bg: 'primary',
-      borderRadius: 4,
+      '&:hover': {
+        color: 'primary',
+      },
+      '& > svg': {
+        display: 'inline-block',
+        verticalAlign: 'middle',
+      }
     })}
   />

@@ -29,6 +29,8 @@ export default props => {
           })}>
           {description}
         </Styled.p>
+        <div css={{ display: 'flex' }}>
+        </div>
         <Button href='#purchase'>
           Buy Tickets
         </Button>
