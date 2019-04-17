@@ -9,6 +9,7 @@
     "now-build": "gatsby build --prefix-paths"
   },
   "dependencies": {
+    "@jxnblk/gatsby-theme-mdx-blog": "^0.0.16",
     "gatsby": "^2.1.19",
     "gatsby-plugin-google-fonts": "^0.0.4",
     "gatsby-theme-conference": "0.0.1",

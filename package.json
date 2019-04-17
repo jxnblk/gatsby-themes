@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "yarn workspaces run clean",
     "start": "yarn workspace conf-styled-example start",
-    "build": "yarn workspace system-example build"
+    "build": "yarn workspace conf-styled-example build"
   },
   "workspaces": [
     "themes/*",

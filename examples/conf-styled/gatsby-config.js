@@ -1,7 +1,8 @@
 module.exports = {
   pathPrefix: '/examples/conf-styled',
   __experimentalThemes: [
-    'gatsby-theme-conference'
+    'gatsby-theme-conference',
+    '@jxnblk/gatsby-theme-mdx-blog',
   ],
   siteMetadata: {
     title: 'Purple Conf 2019',
@@ -10,6 +11,7 @@ module.exports = {
     instagram: '',
   },
   plugins: [
+    'gatsby-plugin-shadowing-analyzer',
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
