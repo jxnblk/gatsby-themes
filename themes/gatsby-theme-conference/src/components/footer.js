@@ -1,28 +1,63 @@
 import React from 'react'
-import { Styled } from 'theme-ui'
+import { Styled, css } from 'theme-ui'
+import { Box } from 'theme-ui/layout'
+import { Twitter, Instagram } from 'react-feather'
 import useSiteMetadata from '../use-site-metadata'
+import NavLink from './nav-link'
 
 export default props => {
   const { twitter, instagram } = useSiteMetadata()
 
   return (
     <>
-      <Styled.a href='#speakers'>Speakers</Styled.a>
-      <Styled.a href='#schedule'>Schedule</Styled.a>
-      <Styled.a href='#venue'>Venue</Styled.a>
-      <Styled.a href='#sponsors'>Sponsors</Styled.a>
-      <Styled.a href='#purchase'>Buy Tickets</Styled.a>
-      <Styled.a to='/code-of-conduct'>Code of Conduct</Styled.a>
-      <Styled.a to='/scholarship'>Scholarship</Styled.a>
-      <Styled.a to='/privacy-policy'>Privacy Policy</Styled.a>
-
+      <NavLink href='#speakers'>Speakers</NavLink>
+      <NavLink href='#schedule'>Schedule</NavLink>
+      <NavLink href='#venue'>Venue</NavLink>
+      <NavLink href='#sponsors'>Sponsors</NavLink>
+      <NavLink href='#purchase'>Buy Tickets</NavLink>
+      <NavLink to='/code-of-conduct'>Code of Conduct</NavLink>
+      <NavLink to='/scholarship'>Scholarship</NavLink>
+      <NavLink to='/privacy-policy'>Privacy Policy</NavLink>
+      <Box mx='auto' />
       {twitter && (
-        <Styled.a href={twitter}>Twitter</Styled.a>
+        <Styled.a
+          title='Follow us on Twitter'
+          href={twitter}
+          css={css({
+            display: 'inline-block',
+            color: 'inherit',
+            textDecoration: 'none',
+          })}>
+          <Twitter
+            css={{
+              display: 'inline-block',
+              verticalAlign: 'middle',
+            }}
+          />
+        </Styled.a>
       )}
       {instagram && (
-        <Styled.a href={instagram}>Instagram</Styled.a>
+        <Styled.a
+          title='Follow us on Instagram'
+          href={instagram}
+          css={css({
+            display: 'inline-block',
+            p: 3,
+            color: 'inherit',
+            textDecoration: 'none',
+          })}>
+          <Instagram
+            css={{
+              display: 'inline-block',
+              verticalAlign: 'middle',
+            }}
+          />
+        </Styled.a>
       )}
-      <Styled.p>
+      <Styled.p
+        css={css({
+          mb: 0
+        })}>
         © 2019 Gatsby, Inc.
       </Styled.p>
     </>

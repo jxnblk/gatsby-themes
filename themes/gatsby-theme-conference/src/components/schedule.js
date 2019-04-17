@@ -1,5 +1,5 @@
 import React from 'react'
-import { Styled, css } from 'theme-ui'
+import { Styled } from 'theme-ui'
 import { Box } from 'theme-ui/layout'
 
 export default ({

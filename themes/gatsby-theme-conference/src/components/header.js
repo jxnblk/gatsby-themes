@@ -1,24 +1,22 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Styled } from 'theme-ui'
 import { Box } from 'theme-ui/layout'
 import useSiteMetadata from '../use-site-metadata'
+import NavLink from './nav-link'
+import Button from './button'
 
 export default props => {
-  const {
-    title,
-    description
-  } = useSiteMetadata()
+  const { title } = useSiteMetadata()
 
   return (
     <>
-      <Link to='/'>{title}</Link>
+      <NavLink as={Link} to='/'>{title}</NavLink>
       <Box mx='auto' />
-      <Styled.a href='#speakers'>Speakers</Styled.a>
-      <Styled.a href='#schedule'>Schedule</Styled.a>
-      <Styled.a href='#venue'>Venue</Styled.a>
-      <Styled.a href='#sponsors'>Sponsors</Styled.a>
-      <Styled.a href='#purchase'>Buy Tickets</Styled.a>
+      <NavLink href='#speakers'>Speakers</NavLink>
+      <NavLink href='#schedule'>Schedule</NavLink>
+      <NavLink href='#venue'>Venue</NavLink>
+      <NavLink href='#sponsors'>Sponsors</NavLink>
+      <Button href='#purchase'>Buy Tickets</Button>
     </>
   )
 }

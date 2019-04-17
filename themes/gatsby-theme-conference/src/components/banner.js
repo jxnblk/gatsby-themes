@@ -2,6 +2,7 @@ import React from 'react'
 import { Styled, css } from 'theme-ui'
 import { Box } from 'theme-ui/layout'
 import useSiteMetadata from '../use-site-metadata'
+import Button from './button'
 
 export default props => {
   const {
@@ -13,16 +14,24 @@ export default props => {
     <Box
       {...props}
       px={4}
-      py={5}>
-      <Styled.h1>
+      py={[5, 6, 7]}>
+      <Styled.h1
+        css={css({
+          fontSize: [5, 6, 7],
+          m: 0
+        })}>
         {title}
       </Styled.h1>
-      <Styled.p>
+      <Styled.p
+        css={css({
+          fontSize: 3,
+          mb: 5,
+        })}>
         {description}
       </Styled.p>
-      <button>
+      <Button href='#purchase'>
         Buy Tickets
-      </button>
+      </Button>
     </Box>
   )
 }

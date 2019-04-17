@@ -21,6 +21,7 @@
     "gatsby-source-filesystem": "^2.0.29",
     "gatsby-transformer-yaml": "^2.1.11",
     "mkdirp": "^0.5.1",
+    "react-feather": "^1.1.6",
     "theme-ui": "^0.0.6"
   },
   "peerDependencies": {

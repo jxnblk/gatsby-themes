@@ -10,7 +10,7 @@ export default props =>
     {...props}
     css={css({
       fontFamily: 'body',
-      lineHeight: 1.5,
+      lineHeight: 'body',
       color: 'text',
       bg: 'background',
     })}>
@@ -20,13 +20,24 @@ export default props =>
         body: { margin: 0 }
       }}
     />
-    <UI.Header>
+    <UI.Header
+      css={css({
+        alignItems: 'center',
+        px: 3,
+        py: 2,
+      })}>
       <Header />
     </UI.Header>
     <UI.Main>
       {props.children}
     </UI.Main>
-    <UI.Footer>
+    <UI.Footer
+      css={css({
+        px: 3,
+        py: 3,
+        alignItems: 'center',
+        flexWrap: 'wrap',
+      })}>
       <Footer />
     </UI.Footer>
   </UI.Layout>
