@@ -8,6 +8,9 @@ module.exports = {
     twitter: 'https://twitter.com/gatsbyjs',
     instagram: 'https://twitter.com/gatsbyjs',
   },
+  mapping: {
+    'ScheduleYaml.speaker': `SpeakersYaml`,
+  },
   plugins: [
     'gatsby-plugin-emotion',
     {

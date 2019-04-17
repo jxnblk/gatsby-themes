@@ -1,4 +1,5 @@
 const heading = {
+  fontFamily: 'heading',
   lineHeight: 'heading',
   fontWeight: 'heading',
   m: 0,
@@ -14,12 +15,17 @@ export default {
   },
   fonts: {
     body: 'system-ui, sans-serif',
+    heading: 'inherit',
   },
+  fontSizes: [
+    12, 14, 16, 20, 24, 32, 48, 64, 96
+  ],
   lineHeights: {
     body: 1.5,
     heading: 1.25,
   },
   fontWeights: {
+    body: 400,
     heading: 700,
     bold: 700,
   },
@@ -30,11 +36,11 @@ export default {
     },
     h2: {
       ...heading,
-      fontSize: [4, 5, 6],
+      fontSize: [5, 6],
     },
     h3: {
       ...heading,
-      fontSize: [3, 4],
+      fontSize: [4],
     },
     h4: {
       ...heading,

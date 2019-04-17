@@ -12,7 +12,10 @@ export const pageQuery = graphql`
           time: date(formatString: "h:mm a")
           title
           description
-          speaker
+          speaker {
+            name
+            company
+          }
         }
       }
     }

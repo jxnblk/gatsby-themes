@@ -4,6 +4,7 @@ import { Container } from 'theme-ui/layout'
 import groupBy from 'lodash.groupby'
 import Layout from '../components/layout'
 import List from '../components/list'
+import ScheduleItem from '../components/schedule-item'
 
 export default ({
   data,
@@ -25,15 +26,7 @@ export default ({
             <List>
               {days[date].map(item => (
                 <li key={item.time}>
-                  <Styled.h3>
-                    {item.time}
-                  </Styled.h3>
-                  <Styled.p>
-                    {item.title}
-                  </Styled.p>
-                  <Styled.p>
-                    {item.description}
-                  </Styled.p>
+                  <ScheduleItem {...item} />
                 </li>
               ))}
             </List>

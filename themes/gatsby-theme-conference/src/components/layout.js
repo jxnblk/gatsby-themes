@@ -11,6 +11,7 @@ export default props =>
     css={css({
       fontFamily: 'body',
       lineHeight: 'body',
+      fontWeight: 'body',
       color: 'text',
       bg: 'background',
     })}>

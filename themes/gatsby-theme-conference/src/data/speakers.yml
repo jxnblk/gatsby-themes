@@ -1,7 +1,7 @@
 - id: jay
   name: Jay Gatsby
   image: https://upload.wikimedia.org/wikipedia/en/4/42/JayGatsby1.jpg
-  bio: A mysterious millionaire with shady business connections.
+  bio: A mysterious millionaire
   company: Gatsby
   twitter: gatsbyjs
   github: gatsbyjs

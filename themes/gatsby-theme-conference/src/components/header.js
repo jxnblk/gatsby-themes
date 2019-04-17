@@ -14,12 +14,12 @@ export default props => {
       <NavLink as={Link} to='/'>{title}</NavLink>
       <Box mx='auto' />
       <DesktopOnly>
-        <NavLink href='#speakers'>Speakers</NavLink>
-        <NavLink href='#schedule'>Schedule</NavLink>
-        <NavLink href='#venue'>Venue</NavLink>
-        <NavLink href='#sponsors'>Sponsors</NavLink>
+        <NavLink as={Link} to='/#speakers'>Speakers</NavLink>
+        <NavLink as={Link} to='/#schedule'>Schedule</NavLink>
+        <NavLink as={Link} to='/#venue'>Venue</NavLink>
+        <NavLink as={Link} to='/#sponsors'>Sponsors</NavLink>
       </DesktopOnly>
-      <Button href='#purchase'>Buy Tickets</Button>
+      <Button as={Link} to='/#purchase'>Buy Tickets</Button>
     </>
   )
 }

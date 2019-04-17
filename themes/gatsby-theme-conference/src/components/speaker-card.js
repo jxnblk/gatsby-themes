@@ -1,7 +1,13 @@
 import React from 'react'
 import { Styled, css } from 'theme-ui'
+import { Flex } from 'theme-ui/layout'
+import {
+  Twitter,
+  GitHub
+} from 'react-feather'
 import BackgroundImage from './background-image'
 import Card from './card'
+import IconLink from './icon-link'
 
 export default ({
   id,
@@ -23,16 +29,31 @@ export default ({
     />
     <Styled.h3>
       {name}
-      {' '}
-      <span
-        css={css({
-          fontSize: 2,
-          fontWeight: 'normal',
-        })}>
-        {company}
-      </span>
     </Styled.h3>
-    <Styled.p>
+    <Styled.div
+      css={css({
+        fontSize: 1,
+        fontWeight: 'bold',
+        mb: 2,
+      })}>
+      {company}
+    </Styled.div>
+    <Styled.p
+      css={css({
+        mb: 0,
+      })}>
       {bio}
     </Styled.p>
+    <Flex mx={-2}>
+      {twitter && (
+        <IconLink href={twitter}>
+          <Twitter />
+        </IconLink>
+      )}
+      {github && (
+        <IconLink href={github}>
+          <GitHub />
+        </IconLink>
+      )}
+    </Flex>
   </Card>
