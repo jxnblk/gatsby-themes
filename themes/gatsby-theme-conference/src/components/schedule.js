@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import { Styled } from 'theme-ui'
-import { Box } from 'theme-ui/layout'
+import { Box, Container } from 'theme-ui/layout'
 import List from './list'
 import SectionHeading from './section-heading'
 
@@ -9,25 +10,28 @@ export default ({
 }) =>
   <Box
     id='schedule'
-    px={4}
     py={5}>
-    <SectionHeading>
-      Schedule
-    </SectionHeading>
-    <List>
-      {schedule.map(item => (
-        <li key={item.date}>
-          <Styled.h3>
+    <Container>
+      <SectionHeading>
+        Schedule
+      </SectionHeading>
+      <List>
+        {schedule.map(item => (
+          <li key={item.date + item.time}>
             {item.date}
-          </Styled.h3>
-          <Styled.p>
-            {item.title}
-          </Styled.p>
-          <Styled.p>
-            {item.description}
-          </Styled.p>
-          <pre>{item.speaker}</pre>
-        </li>
-      ))}
-    </List>
+            <Styled.h3>
+              {item.time}
+            </Styled.h3>
+            <Styled.p>
+              {item.title}
+            </Styled.p>
+          </li>
+        ))}
+      </List>
+      <Styled.a
+        as={Link}
+        to='/schedule'>
+        View full schedule
+      </Styled.a>
+    </Container>
   </Box>

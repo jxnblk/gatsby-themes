@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import { Styled, css } from 'theme-ui'
 import { Box } from 'theme-ui/layout'
 import { Twitter, Instagram } from 'react-feather'
@@ -10,14 +11,14 @@ export default props => {
 
   return (
     <>
-      <NavLink href='#speakers'>Speakers</NavLink>
-      <NavLink href='#schedule'>Schedule</NavLink>
+      <NavLink as={Link} to='/speakers'>Speakers</NavLink>
+      <NavLink as={Link} to='/schedule'>Schedule</NavLink>
       <NavLink href='#venue'>Venue</NavLink>
       <NavLink href='#sponsors'>Sponsors</NavLink>
       <NavLink href='#purchase'>Buy Tickets</NavLink>
-      <NavLink to='/code-of-conduct'>Code of Conduct</NavLink>
-      <NavLink to='/scholarship'>Scholarship</NavLink>
-      <NavLink to='/privacy-policy'>Privacy Policy</NavLink>
+      <NavLink as={Link} to='/code-of-conduct'>Code of Conduct</NavLink>
+      <NavLink as={Link} to='/scholarship'>Scholarship</NavLink>
+      <NavLink as={Link} to='/privacy-policy'>Privacy Policy</NavLink>
       <Box mx='auto' />
       {twitter && (
         <Styled.a
@@ -56,7 +57,8 @@ export default props => {
       )}
       <Styled.p
         css={css({
-          mb: 0
+          mb: 0,
+          px: 3,
         })}>
         © 2019 Gatsby, Inc.
       </Styled.p>
