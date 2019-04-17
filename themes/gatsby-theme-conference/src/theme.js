@@ -5,6 +5,7 @@ const heading = {
 }
 
 export default {
+  breakpoints: [ '40em', '52em', '64em' ],
   colors: {
     text: '#000',
     background: '#fff',

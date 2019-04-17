@@ -8,6 +8,8 @@ export default props =>
       display: 'inline-block',
       color: 'inherit',
       textDecoration: 'none',
+      whiteSpace: 'nowrap',
+      flex: 'none',
       fontWeight: 'bold',
       px: 3,
       py: 3,

@@ -25,6 +25,7 @@ export default props =>
         alignItems: 'center',
         px: 3,
         py: 2,
+        overflowX: 'auto',
       })}>
       <Header />
     </UI.Header>
