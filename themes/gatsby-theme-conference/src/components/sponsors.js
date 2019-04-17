@@ -1,6 +1,9 @@
 import React from 'react'
 import { Styled } from 'theme-ui'
 import { Box } from 'theme-ui/layout'
+import SectionHeading from './section-heading'
+import FlexList from './flex-list'
+import Card from './card'
 
 export default ({
   sponsors = []
@@ -9,16 +12,20 @@ export default ({
     id='sponsors'
     px={4}
     py={5}>
-    <Styled.h2>
+    <SectionHeading>
       Sponsors
-    </Styled.h2>
-    <ul>
+    </SectionHeading>
+    <FlexList>
       {sponsors.map(sponsor => (
-        <li key={sponsor.id}>
-          <Styled.a href={sponsor.url}>
-            {sponsor.name}
+        <Card as='li' key={sponsor.id}>
+          <Styled.a
+            title={sponsor.name}
+            href={sponsor.url}>
+            <Styled.img
+              src={sponsor.logo}
+            />
           </Styled.a>
-        </li>
+        </Card>
       ))}
-    </ul>
+    </FlexList>
   </Box>

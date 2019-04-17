@@ -24,6 +24,7 @@ export const pageQuery = graphql`
           id
           name
           url
+          logo
         }
       }
     }

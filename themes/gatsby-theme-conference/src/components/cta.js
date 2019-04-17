@@ -7,7 +7,7 @@ export default props =>
   <Box
     id='purchase'
     px={4}
-    py={5}>
+    py={[5, 6]}>
     <Button href='#!'>
       Buy Tickets
     </Button>

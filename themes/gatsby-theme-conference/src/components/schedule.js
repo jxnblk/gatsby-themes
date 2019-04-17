@@ -1,6 +1,8 @@
 import React from 'react'
 import { Styled } from 'theme-ui'
 import { Box } from 'theme-ui/layout'
+import List from './list'
+import SectionHeading from './section-heading'
 
 export default ({
   schedule = []
@@ -9,10 +11,10 @@ export default ({
     id='schedule'
     px={4}
     py={5}>
-    <Styled.h2>
+    <SectionHeading>
       Schedule
-    </Styled.h2>
-    <ul>
+    </SectionHeading>
+    <List>
       {schedule.map(item => (
         <li key={item.date}>
           <Styled.h3>
@@ -27,5 +29,5 @@ export default ({
           <pre>{item.speaker}</pre>
         </li>
       ))}
-    </ul>
+    </List>
   </Box>

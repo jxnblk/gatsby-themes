@@ -24,9 +24,11 @@ export default {
   styles: {
     h1: {
       ...heading,
+      fontSize: [5, 6, 7],
     },
     h2: {
       ...heading,
+      fontSize: [4, 5, 6],
     },
     h3: {
       ...heading,

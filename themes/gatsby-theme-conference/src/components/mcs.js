@@ -1,6 +1,9 @@
 import React from 'react'
 import { Styled } from 'theme-ui'
 import { Box } from 'theme-ui/layout'
+import SectionHeading from './section-heading'
+import FlexList from './flex-list'
+import Card from './card'
 
 export default ({
   mcs = []
@@ -9,10 +12,12 @@ export default ({
     id='mcs'
     px={4}
     py={5}>
-    <Styled.h2>MCs</Styled.h2>
-    <ul>
+    <SectionHeading>
+      MCs
+    </SectionHeading>
+    <FlexList>
       {mcs.map(mc => (
-        <li key={mc.id}>
+        <Card as='li' key={mc.id}>
           <Styled.img
             src={mc.image}
           />
@@ -22,7 +27,7 @@ export default ({
           <Styled.p>
             {mc.bio}
           </Styled.p>
-        </li>
+        </Card>
       ))}
-    </ul>
+    </FlexList>
   </Box>

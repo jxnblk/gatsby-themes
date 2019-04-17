@@ -7,7 +7,8 @@
   github: gatsbyjs
 - id: daisy
   name: Daisy Buchanan
-  image: https://upload.wikimedia.org/wikipedia/en/d/df/Daisy_Buchanan.png
+  _image: https://upload.wikimedia.org/wikipedia/en/d/df/Daisy_Buchanan.png
+  image: https://compote.slate.com/images/589ce9de-a6be-4167-b1ef-59be7f707ed6.jpg
   bio: Courteous driver
   company: Gatsby
   twitter: gatsbyjs
