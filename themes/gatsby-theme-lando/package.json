@@ -1,0 +1,35 @@
+{
+  "name": "gatsby-theme-lando",
+  "description": "",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Brent Jackson <jxnblk@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "gatsby develop",
+    "clean": "rm -rf node_modules"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.10",
+    "@mdx-js/mdx": "^1.0.10",
+    "@mdx-js/react": "^1.0.6",
+    "emotion-theming": "^10.0.10",
+    "gatsby-mdx": "^0.6.2",
+    "gatsby-plugin-compile-es6-packages": "^1.0.6",
+    "gatsby-plugin-emotion": "^4.0.6",
+    "is-absolute-url": "^3.0.0",
+    "mdx-blocks": "^0.0.15",
+    "theme-ui": "^0.0.8"
+  },
+  "devDependencies": {
+    "gatsby": "^2.1.18",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.1.18",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  }
+}
