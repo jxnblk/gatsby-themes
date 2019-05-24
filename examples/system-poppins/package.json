@@ -9,6 +9,7 @@
     "now-build": "gatsby build --prefix-paths"
   },
   "dependencies": {
+    "@styled-system/typography": "^1.0.0-9",
     "gatsby": "^2.1.19",
     "gatsby-plugin-google-fonts": "^1.0.0",
     "gatsby-theme-system": "0.0.4",
