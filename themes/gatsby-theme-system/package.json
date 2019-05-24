@@ -18,7 +18,7 @@
     "gatsby-plugin-compile-es6-packages": "^1.0.6",
     "gatsby-plugin-emotion": "^4.0.4",
     "styled-system": "^4.0.1",
-    "theme-ui": "^0.0.6"
+    "theme-ui": "^0.0.15"
   },
   "peerDependencies": {
     "gatsby": "^2.1.18",

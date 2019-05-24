@@ -14,7 +14,7 @@
     "@emotion/styled": "^10.0.10",
     "debug": "^4.1.1",
     "emotion-theming": "^10.0.10",
-    "fs-extra": "^7.0.1",
+    "fs-extra": "^8.0.1",
     "gatsby-plugin-compile-es6-packages": "^1.0.6",
     "gatsby-plugin-emotion": "^4.0.6",
     "gatsby-plugin-page-creator": "^2.0.12",
@@ -23,7 +23,7 @@
     "lodash.groupby": "^4.6.0",
     "mkdirp": "^0.5.1",
     "react-feather": "^1.1.6",
-    "theme-ui": "^0.0.8"
+    "theme-ui": "^0.0.15"
   },
   "peerDependencies": {
     "gatsby": "^2.1.18",
