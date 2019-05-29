@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-theme-x",
-  "description": "",
+  "name": "gatsby-theme-mdx-header",
+  "description": "A shadowable MDX-based header component for Gatsby themes",
   "version": "0.0.1",
   "main": "index.js",
   "author": "Brent Jackson <jxnblk@gmail.com>",
@@ -8,7 +8,12 @@
   "scripts": {
     "clean": "rm -rf node_modules"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@mdx-js/mdx": "^1.0.20",
+    "@mdx-js/react": "^1.0.20",
+    "gatsby-plugin-mdx": "^1.0.5",
+    "theme-ui": "^0.0.16"
+  },
   "peerDependencies": {
     "gatsby": "^2.1.18",
     "react": "^16.8.3",

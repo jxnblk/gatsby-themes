@@ -1,28 +1,22 @@
-const pkg = require('./package.json')
-
 module.exports = (opts = {}) => {
   const {
     mdx = true,
   } = opts
 
   return {
+    __experimentalThemes: [
+      'gatsby-theme-header',
+      'gatsby-theme-footer',
+    ],
     plugins: [
       mdx && ({
-        resolve: 'gatsby-mdx',
+        resolve: 'gatsby-plugin-mdx',
         options: {
           extensions: ['.mdx', '.md'],
         }
       }),
-      'gatsby-plugin-emotion',
-      {
-        resolve: 'gatsby-plugin-compile-es6-packages',
-        options: {
-          modules: [
-            pkg.name,
-            'theme-ui',
-          ]
-        }
-      },
+      // todo: is this needed?
+      // 'gatsby-plugin-emotion',
     ].filter(Boolean),
   }
 }

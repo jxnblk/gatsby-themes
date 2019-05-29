@@ -9,6 +9,7 @@ npm i gatsby-theme-system
 
 ## Features
 
+- Built with [Theme UI][]
 - [MDX][]
 - [Emotion][]
 - [Styled System][]
@@ -51,6 +52,10 @@ module.exports = {
 ```
 
 To learn more about MDX, head over to the [MDX docs site][mdx].
+
+<!--
+
+TODO
 
 ## Layout Components
 
@@ -109,6 +114,8 @@ The `Header` and `Footer` components default to a black background, but the colo
 </Header>
 ```
 
+-->
+
 ## Theming
 
 By default, the System theme will add a default Emotion theming context to your site.
@@ -143,4 +150,4 @@ MIT License
 [styled-system]: https://styled-system.com
 [styled system]: https://styled-system.com
 [gatsby mdx]: https://github.com/ChristopherBiscardi/gatsby-mdx
-[theme-ui]: https://github.com/system-ui/theme-ui
+[theme ui]: https://github.com/system-ui/theme-ui

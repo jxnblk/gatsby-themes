@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-theme-x",
-  "description": "",
+  "name": "gatsby-theme-footer",
+  "description": "Adds a shadowable footer component to Gatsby themes",
   "version": "0.0.1",
   "main": "index.js",
   "author": "Brent Jackson <jxnblk@gmail.com>",
