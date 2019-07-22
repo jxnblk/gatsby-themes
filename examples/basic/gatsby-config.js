@@ -1,6 +1,6 @@
 module.exports = {
   pathPrefix: '/examples/basic',
-  __experimentalThemes: [
+  plugins: [
     // 'gatsby-theme-'
   ]
 }

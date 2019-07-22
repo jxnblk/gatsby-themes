@@ -1,20 +1,7 @@
+/** @jsx jsx */
+import { jsx, Styled, css } from 'theme-ui'
 import React from 'react'
-import theme from './theme'
 import { Global } from '@emotion/core'
-import { ThemeProvider, Styled, css } from 'theme-ui'
-import * as UI from 'theme-ui/layout'
-
-export { Styled, css } from 'theme-ui'
-export {
-  Box,
-  Main,
-  Container,
-} from 'theme-ui/layout'
-
-export const wrapRootElement = ({ element, props }) =>
-  <ThemeProvider theme={theme}>
-    {element}
-  </ThemeProvider>
 
 export const GlobalStyles = props =>
   <Global
@@ -27,35 +14,35 @@ export const GlobalStyles = props =>
 export const Layout = props =>
   <>
     <GlobalStyles />
-    <UI.Layout
+    <div
       {...props}
-      css={css({
+      sx={{
         fontFamily: 'body',
         lineHeight: 'body',
-      })}
+      }}
     />
   </>
 
 export const Header = props =>
-  <UI.Header
+  <header
     {...props}
-    css={css({
+    sx={{
       alignItems: 'center',
       p: 3,
       color: 'background',
       bg: 'text',
-    })}
+    }}
   />
 
 export const Footer = props =>
-  <UI.Footer
+  <footer
     {...props}
-    css={css({
+    sx={{
       alignItems: 'center',
       p: 3,
       color: 'background',
       bg: 'text',
-    })}
+    }}
   />
 
 export { default as NavLink } from './nav-link'

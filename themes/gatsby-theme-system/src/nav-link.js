@@ -1,15 +1,15 @@
-import React from 'react'
-import { Styled, css } from 'theme-ui'
+/** @jsx jsx */
+import { jsx, Styled, css } from 'theme-ui'
 
 export default props =>
   <Styled.a
     {...props}
-    css={css({
+    sx={{
       display: 'inline-block',
       color: 'inherit',
       fontWeight: 'bold',
       textDecoration: 'none',
       px: 3,
       py: 2,
-    })}
+    }}
   />

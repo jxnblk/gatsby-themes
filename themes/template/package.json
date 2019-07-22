@@ -9,7 +9,7 @@
     "clean": "rm -rf node_modules"
   },
   "dependencies": {
-    "gatsby-plugin-compile-es6-packages": "^1.0.6"
+    "gatsby-plugin-compile-es6-packages": "^2.0.0"
   },
   "peerDependencies": {
     "gatsby": "^2.1.18",

@@ -8,21 +8,12 @@ module.exports = (opts = {}) => {
   return {
     plugins: [
       mdx && ({
-        resolve: 'gatsby-mdx',
+        resolve: 'gatsby-plugin-mdx',
         options: {
           extensions: ['.mdx', '.md'],
         }
       }),
-      'gatsby-plugin-emotion',
-      {
-        resolve: 'gatsby-plugin-compile-es6-packages',
-        options: {
-          modules: [
-            pkg.name,
-            'theme-ui',
-          ]
-        }
-      },
+      'gatsby-plugin-theme-ui',
     ].filter(Boolean),
   }
 }

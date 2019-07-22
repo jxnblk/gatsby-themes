@@ -1,8 +1,5 @@
 module.exports = {
   pathPrefix: '/examples/conf-styled',
-  __experimentalThemes: [
-    'gatsby-theme-conference'
-  ],
   siteMetadata: {
     title: 'Purple Conf 2019',
     description: 'The purplest conference ever',
@@ -10,6 +7,7 @@ module.exports = {
     instagram: '',
   },
   plugins: [
+    'gatsby-theme-conference'
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {

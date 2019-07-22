@@ -1,7 +1,5 @@
 module.exports = {
-  __experimentalThemes: [
-    'gatsby-theme-system',
-  ],
   plugins: [
+    'gatsby-theme-system',
   ]
 }
