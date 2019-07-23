@@ -7,6 +7,7 @@
     "start": "gatsby develop",
     "clean": "gatsby clean",
     "build": "gatsby build",
+    "now-build": "gatsby build",
     "serve": "gatsby serve"
   },
   "dependencies": {

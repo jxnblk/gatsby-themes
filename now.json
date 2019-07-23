@@ -27,6 +27,27 @@
       }
     },
     {
+      "src": "packages/tomato-blog/package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    },
+    {
+      "src": "packages/blank-example/package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    },
+    {
+      "src": "packages/css/package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    },
+    {
       "src": "packages/conference-example-styled/package.json",
       "use": "@now/static-build",
       "config": {
@@ -35,7 +56,11 @@
     }
   ],
   "routes": [
-    { "src": "/examples/(.*)", "dest": "/packages/$1" },
+    { "src": "/examples/tomato/(.*)", "dest": "/packages/tomato-blog/$1" },
+    { "src": "/examples/system/(.*)", "dest": "/packages/system-example/$1" },
+    { "src": "/examples/conference/(.*)", "dest": "/packages/conference-example-styled/$1" },
+    { "src": "/examples/blank/(.*)", "dest": "/packages/blank-example/$1" },
+    { "src": "/examples/css/(.*)", "dest": "/packages/css/$1" },
     { "src": "/(.*)", "dest": "/packages/www/$1" }
   ]
 }
