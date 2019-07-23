@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "www",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "rm -rf node_modules .cache public",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "now-build": "gatsby build"
+  },
+  "dependencies": {
+    "gatsby": "^2.1.19",
+    "gatsby-theme-system": "^0.1.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  }
+}

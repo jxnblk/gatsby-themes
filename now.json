@@ -6,14 +6,14 @@
   "alias": "gatsby-themes.now.sh",
   "builds": [
     {
-      "src": "examples/www/package.json",
+      "src": "packages/www/package.json",
       "use": "@now/static-build",
       "config": {
         "distDir": "public"
       }
     },
     {
-      "src": "examples/**/package.json",
+      "src": "packages/**/package.json",
       "use": "@now/static-build",
       "config": {
         "distDir": "public"
@@ -21,7 +21,7 @@
     }
   ],
   "routes": [
-    { "src": "/examples/(.*)", "dest": "/examples/$1" },
-    { "src": "/(.*)", "dest": "/examples/www/$1" }
+    { "src": "/packages/(.*)", "dest": "/examples/$1" },
+    { "src": "/(.*)", "dest": "/packages/www/$1" }
   ]
 }
