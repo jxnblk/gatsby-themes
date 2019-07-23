@@ -1,5 +1,4 @@
 /** @jsx jsx */
-import React from 'react'
 import { jsx, Styled, Flex, Container } from 'theme-ui'
 import SectionHeading from './section-heading'
 

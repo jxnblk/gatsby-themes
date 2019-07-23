@@ -1,5 +1,4 @@
 /** @jsx jsx */
-import React from 'react'
 import { jsx, Container } from 'theme-ui'
 import Button from './button'
 

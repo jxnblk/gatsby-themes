@@ -1,4 +1,4 @@
-import theme from 'gatsby-theme-conference/src/theme'
+import theme from 'gatsby-theme-conference/src/gatsby-plugin-theme-ui'
 
 export default {
   ...theme,

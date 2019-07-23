@@ -2,7 +2,6 @@
 import { Styled, jsx, Container } from 'theme-ui'
 import Layout from '../components/layout'
 import FlexList from '../components/flex-list'
-import BackgroundImage from '../components/background-image'
 import SpeakerCard from '../components/speaker-card'
 
 export default ({

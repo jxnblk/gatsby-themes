@@ -1,33 +1,36 @@
-import React from 'react'
+/** @jsx jsx */
 import { Link } from 'gatsby'
+import { Fragment } from 'react'
 import {
-  Box,
+  jsx,
+  Styled,
+} from 'theme-ui'
+import {
   Button,
   NavLink,
-  Styled,
-  css,
 } from 'gatsby-theme-conference'
 
+
 export default props =>
-  <>
+  <Fragment>
     <NavLink
       as={Link}
       to='/'
-      css={css({
+      sx={{
         color: 'primary',
         display: 'flex',
         alignItems: 'center',
-      })}>
+      }}>
       <Styled.img
         width='32'
         height='32'
         src='https://notebook.jxnblk.com/flower.png'
       />
-      <Box mx={1} />
+      <div sx={{ mx: 1 }} />
       Purple Conf
     </NavLink>
-    <Box mx='auto' />
+    <div sx={{ mx: 'auto' }} />
     <Button href='#'>
       Buy Tickets
     </Button>
-  </>
+  </Fragment>

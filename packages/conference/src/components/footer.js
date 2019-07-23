@@ -1,5 +1,4 @@
 /** @jsx jsx */
-import React from 'react'
 import { Link } from 'gatsby'
 import { jsx, Styled, Flex, Container } from 'theme-ui'
 import { Twitter, Instagram } from 'react-feather'

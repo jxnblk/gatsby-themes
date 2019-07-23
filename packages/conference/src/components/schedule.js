@@ -1,5 +1,4 @@
 /** @jsx jsx */
-import React from 'react'
 import { Link } from 'gatsby'
 import { jsx, Styled, Container } from 'theme-ui'
 import groupBy from 'lodash.groupby'

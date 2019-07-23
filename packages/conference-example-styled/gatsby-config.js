@@ -7,7 +7,7 @@ module.exports = {
     instagram: '',
   },
   plugins: [
-    'gatsby-theme-conference'
+    'gatsby-theme-conference',
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
