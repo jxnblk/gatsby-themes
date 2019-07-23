@@ -15,6 +15,9 @@ const Container = props =>
 export const Layout = props =>
   <div
     sx={{
+      minHeight: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
       variant: 'styles.root',
     }}>
     <Global
@@ -37,6 +40,7 @@ export const Layout = props =>
     </header>
     <main
       sx={{
+        flex: '1 1 auto',
         variant: 'layout.main',
       }}>
       <Container>

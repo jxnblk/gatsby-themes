@@ -1,0 +1,15 @@
+{
+  "name": "blank-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "gatsby clean",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "now-build": "gatsby build --prefix-paths"
+  },
+  "dependencies": {
+    "gatsby": "^2.13.36"
+  }
+}

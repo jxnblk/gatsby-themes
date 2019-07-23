@@ -13,7 +13,21 @@
       }
     },
     {
-      "src": "packages/**/package.json",
+      "src": "packages/system-example/package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    },
+    {
+      "src": "packages/conference-example/package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    },
+    {
+      "src": "packages/conference-example-styled/package.json",
       "use": "@now/static-build",
       "config": {
         "distDir": "public"
@@ -21,7 +35,7 @@
     }
   ],
   "routes": [
-    { "src": "/packages/(.*)", "dest": "/examples/$1" },
+    { "src": "/examples/(.*)", "dest": "/packages/$1" },
     { "src": "/(.*)", "dest": "/packages/www/$1" }
   ]
 }
