@@ -15,6 +15,7 @@ From one of the examples in `packages/` run `yarn start` to start the Gatsby dev
 
 ## Learn more about Gatsby themes
 
+- [Gatsby Docs](https://www.gatsbyjs.org/docs/themes/)
 - [Introducing Gatsby Themes][]
 - [Gatsby Themes: Watch Us Build a Theme Live][livestream]
 - [Themes Update: Child Theming and Component Shadowing][update]

@@ -1,7 +1,7 @@
 {
   "name": "gatsby-theme-css",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "gatsby-config.js",
   "license": "MIT",
   "scripts": {
     "start": "gatsby develop",
@@ -10,15 +10,22 @@
     "now-build": "gatsby build",
     "serve": "gatsby serve"
   },
+  "devDependencies": {
+    "gatsby": "^2.13.31",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.13.31",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
   "dependencies": {
     "@emotion/core": "^10.0.14",
     "@mdx-js/react": "^1.0.27",
-    "gatsby": "^2.13.31",
     "gatsby-plugin-catch-links": "^2.1.2",
     "gatsby-theme-blank": "^0.0.2",
     "lodash.get": "^4.4.2",
-    "pluralize": "^8.0.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "pluralize": "^8.0.0"
   }
 }

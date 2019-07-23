@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/examples/tomato-blog',
+  pathPrefix: '/packages/tomato-blog',
   plugins: [
     'gatsby-theme-blog',
     'gatsby-theme-tomato',

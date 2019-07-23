@@ -41,7 +41,7 @@
       }
     },
     {
-      "src": "packages/css/package.json",
+      "src": "packages/css-example/package.json",
       "use": "@now/static-build",
       "config": {
         "distDir": "public"

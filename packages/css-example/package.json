@@ -1,16 +1,19 @@
 {
   "private": true,
-  "name": "blank-example",
+  "name": "css-example",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "clean": "gatsby clean",
     "start": "gatsby develop",
+    "clean": "gatsby clean",
     "build": "gatsby build",
     "now-build": "gatsby build --prefix-paths"
   },
   "dependencies": {
-    "gatsby": "^2.13.36"
+    "gatsby": "*",
+    "gatsby-theme-css": "*",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   }
 }
