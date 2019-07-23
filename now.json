@@ -56,11 +56,6 @@
     }
   ],
   "routes": [
-    { "src": "/examples/tomato/(.*)", "dest": "/packages/tomato-blog/$1" },
-    { "src": "/examples/system/(.*)", "dest": "/packages/system-example/$1" },
-    { "src": "/examples/conference/(.*)", "dest": "/packages/conference-example-styled/$1" },
-    { "src": "/examples/blank/(.*)", "dest": "/packages/blank-example/$1" },
-    { "src": "/examples/css/(.*)", "dest": "/packages/css/$1" },
     { "src": "/(.*)", "dest": "/packages/www/$1" }
   ]
 }
