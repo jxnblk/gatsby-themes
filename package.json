@@ -9,6 +9,7 @@
     "start:www": "yarn workspace www start",
     "start:blank": "yarn workspace blank-example start",
     "start:system": "yarn workspace system-example start",
+    "start:css": "yarn workspace gatsby-theme-css start",
     "start:conference": "yarn workspace conference-example start",
     "start:conf2": "yarn workspace conference-example-styled start"
   },

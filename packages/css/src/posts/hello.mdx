@@ -1,0 +1,18 @@
+
+# Hello
+
+This is an experimental Gatsby MDX blog theme built with CSS modules.
+It uses the same theme specification as [Theme UI][],
+but uses CSS custom properties and lets you write styles with CSS modules.
+Thus, this does **not** include many of the features included in Theme UI, and is only meant as a demonstration of reusing theme objects with different implementations.
+
+**This is for demonstration purposes only**
+and isn't an officially recommended way of building Gatsby themes,
+since styles can still leak into other pages outside of this theme.
+
+If you're less familiar with CSS-in-JS libraries like Emotion,
+this theme is meant to be a gentler introduction to some of the features and concepts found in Theme UI.
+The `src/theme.js` module can be shadowed in order to customize the look and feel of this theme without needing to shadow other components.
+Colors, typography, and some layout styles can be adjusted directly from the theme, and all other styles are in `src/styles.module.css`.
+
+[theme ui]: https://theme-ui.com
