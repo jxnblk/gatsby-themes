@@ -1,69 +1,8 @@
+import { Layout } from '..'
+
+export default Layout
 
 # Notes
 
-Just random thoughts, don't read into too much here...
 
-## Styling
 
-- Global theme context
-- Gatsby themes should use functional approaches to allow outer theme context to override any defaults
-
-## Layouts
-
-- Theme A provides some minimally styled layout components
-- these can be imported and used by end-users to build layouts wherever
-
-```jsx
-// example user layout using Theme A
-import React from 'react'
-import {
-  Layout,
-  Header,
-  Main,
-  Footer,
-} from 'theme-a'
-
-export default props =>
-  <Layout>
-    <Header>
-      This could be hard-coded, populated with data from GraphQL, or whatever
-    </Header>
-    <Main>
-      {props.children}
-    </Main>
-    <Footer>
-      footer content
-    </Footer>
-  </Layout>
-```
-
-- Theme B is an extension of Theme A
-- it adds some typographic and color flourish to the base theme
-- it also exposes the same layout component API
-- internally, Theme B imports Theme A layout components and re-exports the altered components
-
-```jsx
-// example user layout using Theme B
-import React from 'react'
-import {
-  Layout,
-  Header,
-  Main,
-  Footer,
-} from 'theme-a'
-
-export default props =>
-  <Layout>
-    <Header>
-      This could be hard-coded, populated with data from GraphQL, or whatever
-    </Header>
-    <Main>
-      {props.children}
-    </Main>
-    <Footer>
-      footer content
-    </Footer>
-  </Layout>
-```
-
-Essentially layouts in Gatsby themes are just React components and don't need to hook into Gatsby APIs.

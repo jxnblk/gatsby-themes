@@ -5,7 +5,7 @@
   "author": "Brent Jackson <jxnblk@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "clean": "yarn workspaces run clean",
+    "clean": "npx lerna run clean",
     "start:www": "yarn workspace www start",
     "start:blank": "yarn workspace blank-example start",
     "start:system": "yarn workspace system-example start",
@@ -16,5 +16,8 @@
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "devDependencies": {
+    "lerna": "^3.16.4"
+  }
 }

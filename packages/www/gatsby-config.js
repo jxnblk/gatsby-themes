@@ -1,5 +1,6 @@
 module.exports = {
   plugins: [
-    'gatsby-theme-system',
+    'gatsby-plugin-mdx',
+    'gatsby-theme-mono',
   ]
 }
