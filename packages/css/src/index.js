@@ -40,7 +40,6 @@ export const onRenderBody = ({ setPreBodyComponents }) => {
 }
 
 export const Post = props => <Layout {...props} />
-
 export const Posts = ({
   posts,
 }) =>
