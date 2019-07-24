@@ -124,6 +124,5 @@ export const theme = {
     },
   },
 }
-console.log('shadowed theme', theme)
 
 export default theme

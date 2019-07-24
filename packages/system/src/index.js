@@ -30,8 +30,6 @@ export const Layout = props =>
       sx={{
         display: 'flex',
         alignItems: 'center',
-        color: 'background',
-        bg: 'text',
         variant: 'layout.header',
       }}>
       <Container>
@@ -51,8 +49,6 @@ export const Layout = props =>
       sx={{
         display: 'flex',
         alignItems: 'center',
-        color: 'background',
-        bg: 'text',
         variant: 'layout.footer',
       }}>
       <Container>

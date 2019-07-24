@@ -11,6 +11,8 @@ npm i gatsby-theme-system
 - [MDX][]
 - [Theme UI][]
 - Customizable layout, colors & typography
+- Built-in page layout component
+- MDX header and footer content
 
 ## Getting Started
 
