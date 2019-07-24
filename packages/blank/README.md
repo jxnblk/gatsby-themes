@@ -24,8 +24,8 @@ module.exports = {
 
 Add other plugins as needed, and shadow these components to customize the presentation layer:
 
-- `src/gatsby-theme-blank/components/posts.js`: root-level index page
-- `src/gatsby-theme-blank/components/post.js`: post detail page
+- `src/gatsby-theme-blank/posts.js`: root-level index page
+- `src/gatsby-theme-blank/post.js`: post detail page
 
 In the consuming site, add `.mdx` files to the `src/posts/` directory to add blog posts.
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Posts from '../components/posts'
+import Posts from '../posts'
 
 export default props => {
   const posts = props.data.posts.edges

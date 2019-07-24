@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-import Post from '../components/post'
+import Post from '../post'
 
 export default props => {
   const { post } = props.data
