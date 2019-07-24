@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-css",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "gatsby-config.js",
   "license": "MIT",
   "scripts": {
@@ -24,7 +24,7 @@
     "@emotion/core": "^10.0.14",
     "@mdx-js/react": "^1.0.27",
     "gatsby-plugin-catch-links": "^2.1.2",
-    "gatsby-theme-blank": "^0.0.2",
+    "gatsby-theme-blank": "^0.1.0",
     "lodash.get": "^4.4.2",
     "pluralize": "^8.0.0"
   }

@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-blank",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "A bare-bones, unstyled MDX blog theme for Gatsby",
   "main": "index.js",
   "scripts": {
