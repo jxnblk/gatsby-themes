@@ -22,6 +22,7 @@ export default props => {
         mx: 'auto',
         display: 'flex',
         alignItems: 'center',
+        px: 3,
         py: 3,
       }}>
       <div

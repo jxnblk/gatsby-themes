@@ -1,28 +1,28 @@
 export default {
   initialColorMode: 'light',
   colors: {
-    text: 'black',
-    background: 'tomato',
-    primary: '#110077',
-    secondary: '#480c01',
-    muted: '#fc5030',
+    text: '#111126',
+    background: '#fff',
+    primary: '#33e',
+    secondary: '#e3e',
+    muted: '#f6f6f9',
     modes: {
       dark: {
-        text: 'tomato',
-        background: '#210600',
-        primary: '#f88',
-        secondary: '#f20',
-        muted: '#000',
+        text: '#fff',
+        background: '#353944',
+        primary: '#3cf',
+        secondary: '#39c',
+        muted: '#2d313a',
       }
     }
   },
   fonts: {
-    body: 'system-ui, sans-serif',
+    body: '"Roboto Mono", Menlo, monospace',
     heading: 'inherit',
-    monospace: 'Menlo, monospace',
+    monospace: '"Roboto Mono", Menlo, monospace',
   },
   fontSizes: [
-    14, 16, 18, 20, 24, 32, 48, 64,
+    12, 14, 16, 20, 24, 32, 48, 64,
   ],
   lineHeights: {
     body: 1.625,
@@ -30,7 +30,7 @@ export default {
   },
   fontWeights: {
     body: 400,
-    heading: 900,
+    heading: 700,
     bold: 700,
   },
   sizes: {
@@ -59,7 +59,6 @@ export default {
   styles: {
     root: {
       fontFamily: 'body',
-      fontSize: 3,
       fontWeight: 'body',
       lineHeight: 'body',
     },
@@ -71,49 +70,34 @@ export default {
     },
     h1: {
       variant: 'type.heading',
-      fontSize: [5, 6],
-      mt: 4,
-      mb: 2,
+      fontSize: 5,
     },
     h2: {
       variant: 'type.heading',
-      fontSize: [4, 5],
-      mt: 4,
-      mb: 2,
+      fontSize: 4,
     },
     h3: {
       variant: 'type.heading',
-      fontSize: 4,
-      mt: 3,
-      mb: 1,
+      fontSize: 3,
     },
     h4: {
       variant: 'type.heading',
-      fontSize: 3,
-      mt: 3,
-      mb: 1,
+      fontSize: 2,
     },
     h5: {
       variant: 'type.heading',
-      fontSize: 2,
-      mt: 3,
-      mb: 1,
+      fontSize: 1,
     },
     h6: {
-      variant: 'type.heading',
-      fontSize: 2,
-      mt: 3,
-      mb: 1,
-    },
-    p: {
-      mt: 0,
-      mb: 4,
+      variant: 'type.caps',
+      fontSize: 0,
     },
     pre: {
       variant: 'type.mono',
       overflow: 'auto',
       fontSize: 1,
       p: 3,
+      // color: 'background',
       color: 'primary',
       bg: 'muted',
       borderRadius: 2,
@@ -130,14 +114,6 @@ export default {
       border: 0,
       borderBottom: '1px solid',
       borderColor: 'muted',
-    },
-    blockquote: {
-      fontWeight: 'bold',
-      fontStyle: 'italic',
-      borderLeft: t => `4px solid ${t.colors.muted}`,
-      pl: 3,
-      ml: 0,
-      my: 4,
     },
   }
 }

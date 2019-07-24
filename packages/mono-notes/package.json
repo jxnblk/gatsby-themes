@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "tomato-blog",
+  "name": "mono-notes",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -12,10 +12,8 @@
   },
   "dependencies": {
     "gatsby": "^2.13.36",
-    "gatsby-theme-blog": "^1.0.2",
     "gatsby-theme-mono": "*",
-    "gatsby-theme-swiss": "*",
-    "gatsby-theme-tomato": "*",
+    "gatsby-theme-notes": "*",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }

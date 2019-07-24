@@ -1,0 +1,25 @@
+
+# Getting Started
+
+Install Gatsby and the themes as dependencies.
+
+```sh
+npm i gatsby react react-dom gatsby-theme-notes gatsby-theme-mono
+```
+
+Add the themes to your Gatsby config.
+Be sure `gatsby-theme-mono` is last in the `plugins` array.
+
+```js
+// gatsby-config.
+module.exports = {
+  plugins: [
+    'gatsby-theme-notes',
+    'gatsby-theme-mono',
+  ]
+}
+```
+
+Add MDX notes to `/content/notes/`.
+
+Run `gatsby develop` to see your new site.
