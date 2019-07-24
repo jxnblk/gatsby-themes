@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "name": "swiss-blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "gatsby develop",
+    "clean": "gatsby clean",
+    "build": "gatsby build",
+    "now-build": "gatsby build --prefix-paths"
+  },
+  "dependencies": {
+    "gatsby": "^2.13.36",
+    "gatsby-theme-blog": "^1.0.2",
+    "gatsby-theme-swiss": "*",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

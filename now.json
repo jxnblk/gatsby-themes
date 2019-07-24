@@ -48,6 +48,20 @@
       }
     },
     {
+      "src": "packages/swiss-blog/package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    },
+    {
+      "src": "packages/mono-notes/package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    },
+    {
       "src": "packages/conference-example-styled/package.json",
       "use": "@now/static-build",
       "config": {
