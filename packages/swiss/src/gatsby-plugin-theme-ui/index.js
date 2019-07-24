@@ -8,6 +8,11 @@ export default {
     muted: '#e9f6ff',
     modes: {
       dark: {
+        text: 'white',
+        background: 'black',
+        primary: '#1199ff',
+        secondary: '#ff9900',
+        muted: '#111',
       }
     }
   },

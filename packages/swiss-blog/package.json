@@ -8,6 +8,7 @@
     "start": "gatsby develop",
     "clean": "gatsby clean",
     "build": "gatsby build",
+    "logo": "npx capture-website-cli 'https://contrast.now.sh/fff/000?size=96&text=S&radius=32&fontSize=2&baseline=1' --width=96 --height=96 --overwrite content/assets/avatar.png",
     "now-build": "gatsby build --prefix-paths"
   },
   "dependencies": {

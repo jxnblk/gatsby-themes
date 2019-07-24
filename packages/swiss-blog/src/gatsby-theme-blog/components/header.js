@@ -37,7 +37,7 @@ export default props => {
               color: 'primary',
             }
           }}>
-          gatsby-theme-tomato
+          gatsby-theme-swiss
         </Link>
       </div>
       <div sx={{ mx: 'auto' }} />
