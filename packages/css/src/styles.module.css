@@ -1,0 +1,132 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  font-size: var(--fontSize-3);
+  line-height: var(--lineHeight-body);
+  font-weight: var(--fontWeight-body);
+}
+
+.root h1,
+.root h2,
+.root h3,
+.root h4,
+.root h5,
+.root h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--fontWeight-heading);
+  line-height: var(--lineHeight-heading);
+}
+
+.root h1 { font-size: var(--fontSize-5) }
+.root h2 { font-size: var(--fontSize-4) }
+.root h3 { font-size: var(--fontSize-3) }
+.root h4 { font-size: var(--fontSize-2) }
+.root h5 { font-size: var(--fontSize-1) }
+.root h6 { font-size: var(--fontSize-0) }
+
+.root p {}
+.root a {
+  color: var(--color-primary);
+}
+
+.header,
+.container,
+.footer {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
+}
+
+.header {
+  font-weight: var(--fontWeight-bold);
+}
+
+.header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header a:hover,
+.header a:focus {
+  color: var(--color-primary);
+}
+
+.header button {
+  font-family: inherit;
+  font-size: var(--fontSize-1);
+  font-weight: var(--fontWeight-bold);
+  color: var(--color-background);
+  background-color: var(--color-primary);
+  margin: 0;
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-2);
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
+  border: 0;
+}
+
+.container {
+  flex: 1 1 auto;
+}
+
+.footer {
+  font-size: var(--fontSize-1);
+  font-weight: var(--fontWeight-bold);
+}
+
+.footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer a:hover,
+.footer a:focus {
+  color: var(--color-primary);
+}
+
+.header ul,
+.footer ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 0;
+  margin-left: calc(-1 * var(--space-2));
+  margin-right: calc(-1 * var(--space-2));
+}
+
+.header ul > li,
+.footer ul > li {
+  padding: var(--space-2);
+}
+
+.header ul > li:last-child {
+  margin-left: auto;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  font-size: var(--fontSize-5);
+  font-weight: var(--fontWeight-bold);
+}
+
+.list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list a:hover,
+.list a:focus {
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+

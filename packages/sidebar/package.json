@@ -1,0 +1,22 @@
+{
+  "name": "gatsby-theme-sidebar",
+  "description": "A general-purpose Gatsby theme for creating sidebar layouts",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Brent Jackson <jxnblk@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf node_modules"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.7",
+    "@emotion/styled": "^10.0.7",
+    "gatsby-plugin-emotion": "^4.0.4",
+    "lodash.merge": "^4.6.1"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.1.18",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  }
+}

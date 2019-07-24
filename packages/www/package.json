@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "www",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "gatsby clean && rm -rf node_modules",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "now-build": "gatsby build"
+  },
+  "dependencies": {
+    "gatsby": "^2.1.19",
+    "gatsby-plugin-mdx": "^1.0.16",
+    "gatsby-theme-mono": "*",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  }
+}

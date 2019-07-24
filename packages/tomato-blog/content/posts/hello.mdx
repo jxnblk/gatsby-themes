@@ -1,0 +1,31 @@
+---
+title: Hello, Tomato
+date: 2019-07-23
+---
+
+This is `gatsby-theme-blog` with `gatsby-theme-tomato`.
+The two themes compose *horizontally*.
+Both themes use [Theme UI][] for styles.
+The blog theme creates blog post pages from markdown,
+and the tomato theme customizes the colors and typography.
+
+`gatsby-theme-tomato` will also work will `gatsby-theme-notes`.
+Since this theme is only changing the Theme UI config,
+it should generally work with any other Gatsby theme that's
+built with Theme UI.
+
+```js
+// gatsby-config.js
+module.exports = {
+  plugins: [
+    'gatsby-theme-blog',
+    'gatsby-theme-tomato',
+  ]
+}
+```
+
+> Tomato is the *best* CSS color
+> - [Diana Mounter](https://twitter.com/broccolini)
+
+[theme ui]: https://theme-ui.com
+

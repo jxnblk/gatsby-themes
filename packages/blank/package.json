@@ -1,0 +1,30 @@
+{
+  "name": "gatsby-theme-blank",
+  "version": "0.0.2",
+  "description": "A bare-bones, unstyled MDX blog theme for Gatsby",
+  "main": "index.js",
+  "scripts": {
+    "start": "gatsby develop"
+  },
+  "keywords": [],
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": "^2.13.23",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "gatsby": "^2.13.23",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^1.1.0",
+    "@mdx-js/react": "^1.0.27",
+    "gatsby-plugin-mdx": "^1.0.13",
+    "gatsby-source-filesystem": "^2.1.5",
+    "lodash.get": "^4.4.2",
+    "mkdirp": "^0.5.1"
+  }
+}

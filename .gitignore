@@ -1,2 +1,4 @@
 .cache
 public
+package-lock.json
+_notes.md
