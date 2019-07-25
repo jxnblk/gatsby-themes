@@ -3,7 +3,7 @@
 
 **WIP** A bare-bones, unstyled MDX blog theme for Gatsby
 
-This theme in intended for use as a base (i.e. parent) theme which can be used to create custom blog themes.
+This theme is intended for use as a base (i.e. parent) theme which can be used to create custom blog themes.
 
 ## Usage
 
