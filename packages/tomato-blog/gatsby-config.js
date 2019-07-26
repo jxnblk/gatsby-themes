@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: '/packages/tomato-blog',
   plugins: [
-    'gatsby-theme-blog',
+    'gatsby-theme-demo',
     'gatsby-theme-tomato',
   ],
   siteMetadata: {
