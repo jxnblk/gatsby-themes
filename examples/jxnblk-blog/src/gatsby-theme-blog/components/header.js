@@ -27,7 +27,7 @@ export default props => {
       }}>
       <div
         sx={{
-          variant: 'type.heading',
+          fontWeight: 'bold',
         }}>
         <Link to='/'
           sx={{
@@ -37,7 +37,7 @@ export default props => {
               color: 'primary',
             }
           }}>
-          gatsby-theme-mono
+          gatsby-theme-jxnblk
         </Link>
       </div>
       <div sx={{ mx: 'auto' }} />
