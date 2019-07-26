@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "swiss-blog",
+  "name": "mono-blog",
   "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
@@ -14,7 +14,7 @@
   "dependencies": {
     "gatsby": "^2.13.36",
     "gatsby-theme-demo": "*",
-    "gatsby-theme-swiss": "^0.1.1",
+    "gatsby-theme-mono": "^0.1.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }
