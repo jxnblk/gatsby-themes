@@ -1,13 +1,13 @@
 module.exports = {
-  pathPrefix: '/packages/tomato-blog',
+  pathPrefix: '/examples/swiss-blog',
   plugins: [
     'gatsby-theme-demo',
-    'gatsby-theme-tomato',
+    'gatsby-theme-swiss',
   ],
   siteMetadata: {
-    title: 'Gatsby Theme Tomato',
+    title: 'Gatsby Theme Swiss',
     description: 'A Theme UI preset theme for Gatsby',
-    author: 'Tomato',
+    author: 'Brent Jackson',
     social: [
       {
         name: 'twitter',

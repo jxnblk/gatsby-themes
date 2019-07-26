@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/packages/css-example',
+  pathPrefix: '/examples/css',
   plugins: [
     'gatsby-theme-css',
   ]

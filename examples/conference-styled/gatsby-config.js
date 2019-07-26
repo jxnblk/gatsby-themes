@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/examples/conf-styled',
+  pathPrefix: '/examples/conference-styled',
   siteMetadata: {
     title: 'Purple Conf 2019',
     description: 'The purplest conference ever',

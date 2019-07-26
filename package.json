@@ -15,7 +15,8 @@
     "start:conf2": "yarn workspace conference-example-styled start"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "examples/*"
   ],
   "devDependencies": {
     "lerna": "^3.16.4"

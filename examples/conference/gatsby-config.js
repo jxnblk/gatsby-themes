@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/examples/conf',
+  pathPrefix: '/examples/conference',
   plugins: [
     'gatsby-theme-conference'
   ]

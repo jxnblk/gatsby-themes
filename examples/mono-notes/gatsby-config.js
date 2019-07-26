@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/packages/mono-notes',
+  pathPrefix: '/examples/mono-notes',
   plugins: [
     'gatsby-theme-notes',
     'gatsby-theme-mono',

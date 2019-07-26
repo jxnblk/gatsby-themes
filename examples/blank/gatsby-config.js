@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/packages/blank-example',
+  pathPrefix: '/examples/blank',
   plugins: [
     'gatsby-theme-blank',
   ]
