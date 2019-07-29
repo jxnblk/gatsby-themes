@@ -1,0 +1,12 @@
+{
+  "name": "gatsby-theme-jxnblk",
+  "version": "0.1.0",
+  "main": "gatsby-config.js",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/core": "^10.0.14",
+    "@mdx-js/react": "^1.0.27",
+    "gatsby-plugin-theme-ui": "^0.2.18",
+    "theme-ui": "^0.2.21"
+  }
+}
