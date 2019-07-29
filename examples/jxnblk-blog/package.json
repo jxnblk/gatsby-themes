@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "jxnblk-blog",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "gatsby": "^2.13.36",
-    "gatsby-theme-demo": "*",
-    "gatsby-theme-jxnblk": "^0.1.0",
+    "gatsby-theme-demo": "^0.1.1",
+    "gatsby-theme-jxnblk": "^0.1.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }

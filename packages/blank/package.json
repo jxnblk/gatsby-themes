@@ -1,12 +1,18 @@
 {
   "name": "gatsby-theme-blank",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A bare-bones, unstyled MDX blog theme for Gatsby",
   "main": "index.js",
   "scripts": {
     "start": "gatsby develop"
   },
-  "keywords": [],
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-theme",
+    "blog",
+    "mdx"
+  ],
   "author": "Brent Jackson",
   "license": "MIT",
   "peerDependencies": {
@@ -27,12 +33,5 @@
     "lodash.get": "^4.4.2",
     "mkdirp": "^0.5.1"
   },
-  "repository": "jxnblk/gatsby-themes",
-  "keywords": [
-    "gatsby",
-    "gatsby-plugin",
-    "gatsby-theme",
-    "blog",
-    "mdx"
-  ]
+  "repository": "jxnblk/gatsby-themes"
 }
