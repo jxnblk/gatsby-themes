@@ -20,5 +20,14 @@
     "gatsby": "^2.1.18",
     "react": "^16.8.3",
     "react-dom": "^16.8.3"
-  }
+  },
+  "repository": "jxnblk/gatsby-themes",
+  "keywords": [
+    "gatsby",
+    "gatsby-theme",
+    "gatsby-plugin",
+    "blog",
+    "mdx",
+    "theme-ui"
+  ]
 }
