@@ -27,5 +27,13 @@
     "gatsby-theme-blank": "^0.1.0",
     "lodash.get": "^4.4.2",
     "pluralize": "^8.0.0"
-  }
+  },
+  "repository": "jxnblk/gatsby-themes",
+  "keywords": [
+    "gatsby",
+    "gatsby-theme",
+    "gatsby-plugin",
+    "custom-properties",
+    "css"
+  ]
 }
