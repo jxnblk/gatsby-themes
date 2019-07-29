@@ -31,5 +31,12 @@
     "gatsby": "^2.3.23",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
-  }
+  },
+  "repository": "jxnblk/gatsby-themes",
+  "keywords": [
+    "gatsby",
+    "gatsby-theme",
+    "gatsby-plugin",
+    "theme-ui"
+  ]
 }
