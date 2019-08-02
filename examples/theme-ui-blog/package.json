@@ -1,0 +1,19 @@
+{
+  "name": "theme-ui-blog-example",
+  "version": "0.1.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "gatsby develop",
+    "clean": "gatsby clean",
+    "build": "gatsby build"
+  },
+  "dependencies": {
+    "@theme-ui/preset-future": "^0.2.25",
+    "gatsby": "*",
+    "gatsby-plugin-theme-ui": "^0.2.25",
+    "gatsby-theme-ui-blog": "*",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

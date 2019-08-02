@@ -1,0 +1,23 @@
+{
+  "name": "gatsby-theme-ui-blog",
+  "version": "0.1.1",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": "jxnblk/gatsby-themes",
+  "peerDependencies": {
+    "gatsby": "^2.13.23",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "gatsby": "^2.13.23",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.14",
+    "@theme-ui/preset-base": "^0.2.25",
+    "gatsby-theme-blank": "*",
+    "theme-ui": "^0.2.25"
+  }
+}
