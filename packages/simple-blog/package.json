@@ -1,0 +1,23 @@
+{
+  "name": "simple-blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "gatsby develop",
+    "clean": "gatsby clean",
+    "build": "gatsby build"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.15",
+    "@mdx-js/react": "^1.1.5",
+    "@theme-ui/preset-base": "^0.2.29",
+    "gatsby-plugin-theme-ui": "^0.2.29",
+    "gatsby-theme-blank": "*",
+    "gatsby-theme-layout": "*",
+    "theme-ui": "^0.2.29"
+  },
+  "devDependencies": {
+    "gatsby": "^2.13.51"
+  }
+}
