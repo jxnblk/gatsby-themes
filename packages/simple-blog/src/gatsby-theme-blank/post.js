@@ -1,6 +1,6 @@
 /** @jsx jsx */
-import { jsx, Styled } from 'theme-ui'
-import { Layout, Header, Footer } from 'gatsby-theme-layout'
+import { jsx } from 'theme-ui'
+import Layout from '../layout'
 
 export default ({
   title,
@@ -8,9 +8,5 @@ export default ({
   children,
 }) =>
   <Layout>
-    <Header />
-    <Styled.root>
-      {children}
-    </Styled.root>
-    <Footer />
+    {children}
   </Layout>
