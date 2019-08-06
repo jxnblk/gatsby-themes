@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-simple-blog",
-  "version": "1.0.0",
+  "version": "0.2.2",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -13,8 +13,8 @@
     "@mdx-js/react": "^1.1.5",
     "@theme-ui/preset-base": "^0.2.29",
     "gatsby-plugin-theme-ui": "^0.2.29",
-    "gatsby-theme-blank": "*",
-    "gatsby-theme-layout": "*",
+    "gatsby-theme-blank": "0.2.2",
+    "gatsby-theme-layout": "0.2.2",
     "theme-ui": "^0.2.29"
   },
   "devDependencies": {

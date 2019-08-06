@@ -1,10 +1,17 @@
 {
-  "name": "simple-blog",
+  "private": true,
+  "name": "simple-blog-example",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "gatsby develop",
+    "clean": "gatsby clean",
+    "build": "gatsby build"
+  },
   "dependencies": {
     "gatsby": "^2.13.51",
+    "gatsby-theme-simple-blog": "0.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }
