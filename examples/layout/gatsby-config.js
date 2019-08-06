@@ -1,5 +1,5 @@
 module.exports = {
   plugins: [
-    'gatsby-theme-simple-blog',
+    'gatsby-theme-layout-blog',
   ]
 }

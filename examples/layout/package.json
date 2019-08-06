@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "simple-blog-example",
+  "name": "layout-example",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "gatsby": "^2.13.51",
-    "gatsby-theme-simple-blog": "0.2.0",
+    "gatsby-theme-layout-blog": "0.2.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }
