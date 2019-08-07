@@ -1,4 +1,8 @@
+import React from 'react'
 import minimatch from 'minimatch'
+import Layout from './layout'
+import Header from './header'
+import Footer from './footer'
 
 export { default as Layout } from './layout'
 export { default as Header } from './header'
