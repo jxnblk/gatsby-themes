@@ -1,2 +1,8 @@
 import React from 'react'
-export default props => <>{props.children}</>
+import Head from './head'
+
+export default props =>
+  <>
+    <Head {...props} />
+    {props.children}
+  </>

@@ -5,13 +5,17 @@ import Layout from './layout'
 export default ({
   title,
   date,
+  excerpt,
   children,
   keywords,
   tags,
   ...props
 }) =>
   <Styled.root>
-    <Layout {...props}>
+    <Layout
+      title={title}
+      excerpt={excerpt}
+      {...props}>
       <Styled.h1>{title}</Styled.h1>
       <div>{date}</div>
       {children}
