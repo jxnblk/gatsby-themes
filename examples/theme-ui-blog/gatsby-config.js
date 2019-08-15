@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/theme-ui-blog',
+  pathPrefix: '/examples/theme-ui-blog',
   plugins: [
     'gatsby-theme-ui-blog',
   ]
