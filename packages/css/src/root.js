@@ -6,36 +6,7 @@ import React, {
 } from 'react'
 import { Global } from '@emotion/core'
 import pluralize from 'pluralize'
-import get from 'lodash.get'
-
-export const Context = createContext({
-  colorMode: 'light',
-  setColorMode: () => {},
-  theme: {},
-})
-
-export const useTheme = () => useContext(Context)
-
-export const ToggleColorMode = props => {
-  const { colorMode, setColorMode, theme } = useTheme()
-  const modes = [
-    'light',
-    ...Object.keys(get(theme, 'colors.modes', {}))
-  ]
-  const toggleMode = e => {
-    const i = modes.indexOf(colorMode)
-    const n = (i + 1) % modes.length
-    setColorMode(modes[n])
-  }
-
-  return (
-    <button
-      children={colorMode}
-      {...props}
-      onClick={toggleMode}
-    />
-  )
-}
+import { Context } from './context'
 
 const STORAGE_KEY = 'theme-css-color-mode'
 const storage = {
@@ -104,7 +75,7 @@ const objectToVars = (name, obj) => {
 
 const themeToCustomProperties = theme => {
   let styles = {
-    margin: 0,
+    // margin: 0,
     color: 'var(--color-text)',
     backgroundColor: 'var(--color-background)',
   }

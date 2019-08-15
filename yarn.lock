@@ -2089,6 +2089,13 @@
   resolved "https://registry.yarnpkg.com/@styled-system/css/-/css-5.0.23.tgz#35ad4f34fe0fec9b011a5468ac0821f12f5e4b1a"
   integrity sha512-yC3S0Iox8OTPAyrP1t5yY9nURUICcUdhVYOkwffftuxa5+txxI4qkT2e9JNCc2aaem+DG8mlXTdnYefjqge5wg==
 
+"@theme-ui/custom-properties@^0.2.29":
+  version "0.2.29"
+  resolved "https://registry.yarnpkg.com/@theme-ui/custom-properties/-/custom-properties-0.2.29.tgz#13f8619f68ee98348718cca68a496e4c39ef0850"
+  integrity sha512-BD9MCR+xCNq66161ytfRcxgBV4owLNOmss3pmF34lXtLDQ/oXz4gFV+/vXi/jW/bw5WhnWWcDMu1d/tUDSNDGQ==
+  dependencies:
+    pluralize "^8.0.0"
+
 "@theme-ui/preset-base@^0.2.29":
   version "0.2.29"
   resolved "https://registry.yarnpkg.com/@theme-ui/preset-base/-/preset-base-0.2.29.tgz#ff5402eda152a2836e2d3cbf65358a8e2599f03e"

@@ -1,0 +1,17 @@
+.list {
+  list-style: none;
+  padding: 0;
+  font-size: var(--fontSize-5);
+  font-weight: var(--fontWeight-bold);
+}
+
+.list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list a:hover,
+.list a:focus {
+  text-decoration: underline;
+  color: var(--color-primary);
+}

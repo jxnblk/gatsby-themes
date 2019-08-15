@@ -1,15 +1,10 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import theme from './theme'
 import Layout from './layout'
 import { Root } from './root'
-import css from './styles.module.css'
 
-export {
-  Context,
-  useTheme,
-  ToggleColorMode,
-} from './root'
+export { useTheme } from './context'
+export { default as ToggleColorMode } from './toggle-color-mode'
 
 export const wrapRootElement = ({ element, props }) => {
   return (
@@ -39,18 +34,5 @@ export const onRenderBody = ({ setPreBodyComponents }) => {
   ])
 }
 
-export const Post = props => <Layout {...props} />
-export const Posts = ({
-  posts,
-}) =>
-  <Layout>
-    <ul className={css.list}>
-      {posts.map(post => (
-        <li key={post.id}>
-          <Link to={post.slug}>
-            {post.title}
-          </Link>
-        </li>
-      ))}
-    </ul>
-  </Layout>
+export { default as Post } from './post'
+export { default as Posts } from './posts'

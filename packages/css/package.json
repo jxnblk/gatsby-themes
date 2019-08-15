@@ -22,9 +22,9 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.14",
-    "@mdx-js/react": "^1.0.27",
+    "@theme-ui/custom-properties": "^0.2.29",
     "gatsby-plugin-catch-links": "^2.1.2",
-    "gatsby-theme-blank": "^0.1.1",
+    "gatsby-theme-blog-core": "^1.1.0",
     "lodash.get": "^4.4.2",
     "pluralize": "^8.0.0"
   },
