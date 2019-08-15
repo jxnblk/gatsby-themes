@@ -1,6 +1,9 @@
-module.exports = {
+module.exports = options => ({
   plugins: [
-    'gatsby-theme-blog-core',
+    {
+      resolve: 'gatsby-theme-blog-core',
+      options
+    },
     'gatsby-plugin-theme-ui',
   ]
-}
+})

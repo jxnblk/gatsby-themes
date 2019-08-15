@@ -5,9 +5,10 @@ import Layout from './layout'
 
 export default ({
   posts,
+  ...props
 }) =>
   <Styled.root>
-    <Layout>
+    <Layout {...props}>
       <ul>
         {posts.map(post => (
           <li key={post.id}>

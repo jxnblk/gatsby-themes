@@ -8,11 +8,13 @@ export default ({
   children,
   keywords,
   tags,
+  ...props
 }) =>
   <Styled.root>
-    <Layout>
+    <Layout {...props}>
       <Styled.h1>{title}</Styled.h1>
       <div>{date}</div>
       {children}
     </Layout>
   </Styled.root>
+
