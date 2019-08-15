@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "theme-ui-blog-example",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build --prefix-paths",
+    "clean": "gatsby clean",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "gatsby": "*",
+    "gatsby-theme-ui-blog": "1.0.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
