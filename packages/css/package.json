@@ -1,7 +1,7 @@
 {
   "name": "gatsby-theme-css",
   "version": "0.2.0",
-  "main": "gatsby-config.js",
+  "main": "index.js",
   "license": "MIT",
   "scripts": {
     "start": "gatsby develop",
