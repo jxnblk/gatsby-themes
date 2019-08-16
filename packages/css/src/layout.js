@@ -1,17 +1,7 @@
 import React from 'react'
-import Header from './header.mdx'
-import Footer from './footer.mdx'
-import css from './styles.module.css'
+import css from './layout.module.css'
 
 export default props =>
   <div className={css.root}>
-    <header className={css.header}>
-      <Header />
-    </header>
-    <main className={css.container}>
-      {props.children}
-    </main>
-    <footer className={css.footer}>
-      <Footer />
-    </footer>
+    {props.children}
   </div>

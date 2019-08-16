@@ -1,6 +1,6 @@
 module.exports = {
   plugins: [
-    'gatsby-theme-blank',
+    'gatsby-theme-blog-core',
     'gatsby-plugin-catch-links',
   ],
 }

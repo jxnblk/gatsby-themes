@@ -3,16 +3,13 @@ export default {
     text: '#001',
     background: '#fff',
     primary: '#07c',
+    secondary: '#609',
     modes: {
       dark: {
         text: '#fff',
         background: '#111',
         primary: '#0cf',
-      },
-      blue: {
-        text: '#fff',
-        background: '#05a',
-        primary: '#fd0',
+        secondary: '#609',
       },
     }
   },
