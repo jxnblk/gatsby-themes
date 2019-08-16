@@ -11,7 +11,8 @@ export default ({
       {posts.map(post => (
         <li key={post.id}>
           <Link to={post.slug}>
-            {post.title}
+            <h2>{post.title}</h2>
+            <p>{post.excerpt}</p>
           </Link>
         </li>
       ))}

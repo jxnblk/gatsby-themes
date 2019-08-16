@@ -1,0 +1,6 @@
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.spacer { margin-right: auto }

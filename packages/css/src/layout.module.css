@@ -24,6 +24,8 @@ body { margin: 0 }
   font-family: var(--font-heading);
   font-weight: var(--fontWeight-heading);
   line-height: var(--lineHeight-heading);
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-3);
 }
 
 .root h1 { font-size: var(--fontSize-5) }
