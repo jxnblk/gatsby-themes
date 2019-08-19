@@ -3,7 +3,8 @@ const path = require('path')
 module.exports = {
   plugins: [
     {
-      resolve: 'gatsby-theme-blog',
+      resolve: 'gatsby-theme-ui-blog',
+      // resolve: 'gatsby-theme-blog',
       options: {
         // absolute dirnames are created in the site
         contentPath: path.resolve(

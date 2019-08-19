@@ -4,6 +4,6 @@
   "main": "gatsby-config.js",
   "license": "MIT",
   "dependencies": {
-    "gatsby-theme-blog": "^1.0.2"
+    "gatsby-theme-ui-blog": "^1.0.1"
   }
 }
