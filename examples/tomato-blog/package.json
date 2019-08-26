@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "tomato-blog",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -13,7 +13,7 @@
   "dependencies": {
     "gatsby": "^2.13.36",
     "gatsby-theme-blog": "^1.0.2",
-    "gatsby-theme-demo": "^0.1.1",
+    "gatsby-theme-demo": "^0.1.2",
     "gatsby-theme-mono": "^0.1.2",
     "gatsby-theme-swiss": "^0.1.2",
     "gatsby-theme-tomato": "^0.1.2",
