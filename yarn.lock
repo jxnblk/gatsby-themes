@@ -2090,9 +2090,9 @@
   integrity sha512-yC3S0Iox8OTPAyrP1t5yY9nURUICcUdhVYOkwffftuxa5+txxI4qkT2e9JNCc2aaem+DG8mlXTdnYefjqge5wg==
 
 "@theme-ui/custom-properties@^0.2.29":
-  version "0.2.29"
-  resolved "https://registry.yarnpkg.com/@theme-ui/custom-properties/-/custom-properties-0.2.29.tgz#13f8619f68ee98348718cca68a496e4c39ef0850"
-  integrity sha512-BD9MCR+xCNq66161ytfRcxgBV4owLNOmss3pmF34lXtLDQ/oXz4gFV+/vXi/jW/bw5WhnWWcDMu1d/tUDSNDGQ==
+  version "0.2.40"
+  resolved "https://registry.yarnpkg.com/@theme-ui/custom-properties/-/custom-properties-0.2.40.tgz#844c0495fe1292c1be82bca4f463cbe2e917d5d1"
+  integrity sha512-KkFQW7sUDE8F5baDWWSwikk9o4QcvESgBWgboOoH13UWnCj56c+o7hfwP85EuPOdlnxbyXGO+VQEB3T+mX5T+g==
   dependencies:
     pluralize "^8.0.0"
 
