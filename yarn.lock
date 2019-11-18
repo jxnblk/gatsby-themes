@@ -3791,12 +3791,7 @@ blob@0.0.5:
   resolved "https://registry.yarnpkg.com/blob/-/blob-0.0.5.tgz#d680eeef25f8cd91ad533f5b01eed48e64caf683"
   integrity sha512-gaqbzQPqOoamawKg0LGVd7SzLgXS+JH61oWprSLH+P+abTczqJbhTR8CmJ2u9/bUYNmHTGJx/UEmn6doAvvuig==
 
-bluebird@^3.0.5, bluebird@^3.5.0, bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5, bluebird@^3.7.0:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.0.tgz#56a6a886e03f6ae577cffedeb524f8f2450293cf"
-  integrity sha512-aBQ1FxIa7kSWCcmKHlcHFlT2jt6J/l4FzC7KcPELkOJOsPOb/bccdhmIrKDfXhwFrmc7vDoDrrepFvGqjyXGJg==
-
-bluebird@^3.7.1:
+bluebird@^3.0.5, bluebird@^3.5.0, bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5, bluebird@^3.7.0, bluebird@^3.7.1:
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.1.tgz#df70e302b471d7473489acf26a93d63b53f874de"
   integrity sha512-DdmyoGCleJnkbp3nkbxTLJ18rjDsE4yCggEwKNXkeV123sPNfOCYeDoeuOY+F2FrSjO1YXcTU+dsy96KMy+gcg==
@@ -7197,10 +7192,10 @@ gatsby-cli@^2.7.53:
     ink "^2.4.0"
     ink-spinner "^3.0.1"
 
-gatsby-core-utils@^1.0.12, gatsby-core-utils@^1.0.18, gatsby-core-utils@^1.0.4:
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.0.18.tgz#7be8ca6dd684baac7b546412b436cc145d70678a"
-  integrity sha512-DaCWRYltwRjFlyDwCkHDizARZwosYMTyRS6cCBpZRC4CzHaKLpio1cKoxXhB0bUDxf+loHXWNMW1S3Z+GZ7FTw==
+gatsby-core-utils@^1.0.12, gatsby-core-utils@^1.0.18, gatsby-core-utils@^1.0.19, gatsby-core-utils@^1.0.4:
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.0.19.tgz#670a0eefe8fc8517c5b87573be6cd817d4b1a96a"
+  integrity sha512-Fp5PBmAuqL+V5FTqjQ6d2Ow7a9OY6GlJVlS5wl/bbbGjRDtYJe7tqAxWThzeKDkLAsKUz2RP8AiJOSLWn1bDRg==
   dependencies:
     ci-info "2.0.0"
 
@@ -7455,9 +7450,9 @@ gatsby-remark-smartypants@^2.1.2:
     unist-util-visit "^1.3.0"
 
 gatsby-source-filesystem@^2.0.29, gatsby-source-filesystem@^2.1.36, gatsby-source-filesystem@^2.1.5, gatsby-source-filesystem@^2.1.9:
-  version "2.1.36"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.1.36.tgz#3e2fda1d7e7a31cfc0e67814ef7f4fb94d6e4e8c"
-  integrity sha512-8J2bEfIM+bxXTCcJ9Y5ZV7WEPiFDoY/G0tfZVrYsZZiuLPSNKuryxtjV0NwSDRE8mQZn9M54a3Q8xI34/pkfyQ==
+  version "2.1.37"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.1.37.tgz#2738e3031028730952e042cf45421873c2f18d58"
+  integrity sha512-RCTgRDFwHzH+WG0aFL39TB276lnaRwrSuTlulOTBGbITA6+zaIhmpjQk/gdhl3FQUz7tw3Or+xMhcqghsoAeCA==
   dependencies:
     "@babel/runtime" "^7.7.2"
     better-queue "^3.8.10"
@@ -7465,11 +7460,11 @@ gatsby-source-filesystem@^2.0.29, gatsby-source-filesystem@^2.1.36, gatsby-sourc
     chokidar "3.3.0"
     file-type "^12.4.0"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.0.18"
+    gatsby-core-utils "^1.0.19"
     got "^7.1.0"
     md5-file "^3.2.3"
     mime "^2.4.4"
-    pretty-bytes "^4.0.2"
+    pretty-bytes "^5.3.0"
     progress "^2.0.3"
     read-chunk "^3.2.0"
     valid-url "^1.0.9"
@@ -12385,11 +12380,6 @@ prepend-http@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-2.0.0.tgz#e92434bfa5ea8c19f41cdfd401d741a3c819d897"
   integrity sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=
-
-pretty-bytes@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/pretty-bytes/-/pretty-bytes-4.0.2.tgz#b2bf82e7350d65c6c33aa95aaa5a4f6327f61cd9"
-  integrity sha1-sr+C5zUNZcbDOqlaqlpPYyf2HNk=
 
 pretty-bytes@^5.3.0:
   version "5.3.0"
