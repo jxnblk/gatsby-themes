@@ -7098,9 +7098,9 @@ gatsby-plugin-og-image@0.0.1:
     rev-hash "^2.0.0"
 
 gatsby-plugin-page-creator@^2.0.12, gatsby-plugin-page-creator@^2.1.30:
-  version "2.1.33"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.1.33.tgz#384022969834e04607197b36f8fd4c575d1c11e7"
-  integrity sha512-y1KuApvgLSjSbZumLFk32vNRCbiZjhE2nIR4fVbZZ9XevgPxJgBU+Hn6+xM+mYF4/4qxV7ij1f289U+caWFn5g==
+  version "2.1.34"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.1.34.tgz#5585f334bbf8f1f7cb8421c0c715dd07b50ad2d4"
+  integrity sha512-w315rYA1KS48jVo4Zg/1Uxm5Y6h48rW8Bf0520uOh8SkSr0qXFC6ivFmw2Uq4WFH02+qN7QTqGd3sHX1wwlf+g==
   dependencies:
     "@babel/runtime" "^7.7.4"
     bluebird "^3.7.1"
