@@ -6893,7 +6893,7 @@ gatsby-cli@^2.8.18:
     ink "^2.6.0"
     ink-spinner "^3.0.1"
 
-gatsby-core-utils@^1.0.22, gatsby-core-utils@^1.0.24, gatsby-core-utils@^1.0.25, gatsby-core-utils@^1.0.27, gatsby-core-utils@^1.0.4:
+gatsby-core-utils@^1.0.24, gatsby-core-utils@^1.0.27, gatsby-core-utils@^1.0.4:
   version "1.0.27"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.0.27.tgz#d08270fc3de7ca48a1ae2f0931afb08c09647141"
   integrity sha512-w75Sjby/XhYQexeDTAQoBI385BXMt79B+hT55JwQmtz1VJ4/gQMUENG2J5ABzPsN7rD1TueNcR9BpU5Ns7sgdw==
@@ -6956,12 +6956,12 @@ gatsby-plugin-compile-es6-packages@^2.1.0:
     "@babel/runtime" "^7.0.0"
     regex-escape "^3.4.8"
 
-gatsby-plugin-emotion@^4.0.4, gatsby-plugin-emotion@^4.1.16, gatsby-plugin-emotion@^4.1.2:
-  version "4.1.16"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-4.1.16.tgz#7ac7f03f8b2a1c93ff0ecd2378a14c97ef9380b1"
-  integrity sha512-zC9wQowDdaVnjD2zOxkdQHGHI9cYozDyIRYOoRQoKEvJjhet3Qb4ocRY4MNq5orpRzanFX3LNhMbVSTVxtoK2g==
+gatsby-plugin-emotion@^4.0.4, gatsby-plugin-emotion@^4.1.2, gatsby-plugin-emotion@^4.1.21:
+  version "4.1.21"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-4.1.21.tgz#19e47d873ce2476f29377453079ed4e4c7bab475"
+  integrity sha512-jFb+3AqSrGZpN3o0Q2mhVN70YTAENCcNL/EE6RjUP+UwtPhaj8e+WHDI0IEq4IYKooa3DtCW4y95bmcd/5WDXQ==
   dependencies:
-    "@babel/runtime" "^7.7.4"
+    "@babel/runtime" "^7.7.6"
     "@emotion/babel-preset-css-prop" "^10.0.23"
 
 gatsby-plugin-feed@^2.3.6:
@@ -6980,7 +6980,7 @@ gatsby-plugin-google-fonts@^1.0.0:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-1.0.1.tgz#d71054f7bf207b9a8da227380369e18e6f4e0201"
   integrity sha512-p1NVkn27GUnDA5qHM+Z4cCcLCJIardzZXMon3640sT4xuL/AZJbsx3HEt2KY/5oZu0UXIkytkxzV2Da4rQeUIg==
 
-gatsby-plugin-mdx@^1.0.13, gatsby-plugin-mdx@^1.0.15, gatsby-plugin-mdx@^1.0.16, gatsby-plugin-mdx@^1.0.24, gatsby-plugin-mdx@^1.0.59:
+gatsby-plugin-mdx@^1.0.13, gatsby-plugin-mdx@^1.0.15, gatsby-plugin-mdx@^1.0.16, gatsby-plugin-mdx@^1.0.24, gatsby-plugin-mdx@^1.0.69:
   version "1.0.69"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-1.0.69.tgz#11b33a5478dd7ab005c8b093e402b4ccb1c122db"
   integrity sha512-v3i9JFjtO0R+WYStpQozo0N8rL4kBtzW3TvljaCt6t1sPccS38++wV8kAUQH1mB6x267eXoc2o5NjLAY7YD1kQ==
@@ -7151,10 +7151,10 @@ gatsby-remark-smartypants@^2.1.2:
     retext-smartypants "^3.0.0"
     unist-util-visit "^1.3.0"
 
-gatsby-source-filesystem@^2.0.29, gatsby-source-filesystem@^2.1.40, gatsby-source-filesystem@^2.1.5, gatsby-source-filesystem@^2.1.9:
-  version "2.1.43"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.1.43.tgz#02652b41fcdd8999b2b2107edecdec8703273620"
-  integrity sha512-lmq64xMgHE6cXwLgddogcx2THPsMCia/HivWRGK6DCJhCOXDbkWSiNYthpMIgZXkfsGaYFiVjxRZSSn1QVOU9g==
+gatsby-source-filesystem@^2.0.29, gatsby-source-filesystem@^2.1.47, gatsby-source-filesystem@^2.1.5, gatsby-source-filesystem@^2.1.9:
+  version "2.1.47"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.1.47.tgz#a9d147bea45856e203291c37610765b38c44e724"
+  integrity sha512-25WktQN4XUpknVkwwvIio80ZEg3tEQISOsU6N81fI0tpxLPss9iShplGQvuA3K4dsewV+CTHQs3t3vyMGSaNYg==
   dependencies:
     "@babel/runtime" "^7.7.6"
     better-queue "^3.8.10"
@@ -7162,7 +7162,7 @@ gatsby-source-filesystem@^2.0.29, gatsby-source-filesystem@^2.1.40, gatsby-sourc
     chokidar "3.3.0"
     file-type "^12.4.0"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.0.25"
+    gatsby-core-utils "^1.0.27"
     got "^7.1.0"
     md5-file "^3.2.3"
     mime "^2.4.4"
@@ -7236,22 +7236,22 @@ gatsby-theme-blog@^1.0.2:
     typography-theme-wordpress-2016 "^0.16.19"
 
 gatsby-theme-notes@*:
-  version "1.0.31"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-notes/-/gatsby-theme-notes-1.0.31.tgz#074ae76966aad2305fac234baf9dbc3be67a9851"
-  integrity sha512-pVtWb0PczTQCndqTYJ2M6q6IcXlPCbJGQOBLHR/8msi7MKZskGXFHY/80mjn8U6ry936EEV4O2oJlG4ycIvRDA==
+  version "1.0.59"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-notes/-/gatsby-theme-notes-1.0.59.tgz#6a4d10be1a50b39925ef7ab57ecf0d9d3f7e12d6"
+  integrity sha512-/L9ypDuMex36QHTqSuXv64bNeZ+vQvqhs/9kpDSANCl18Bxjls1GZWFu+wtyPGNxdqJVFXfOpHoFpOkElXQJwA==
   dependencies:
     "@emotion/core" "^10.0.22"
     "@mdx-js/mdx" "^1.5.1"
     "@mdx-js/react" "^1.5.1"
-    gatsby-core-utils "^1.0.22"
+    gatsby-core-utils "^1.0.27"
     gatsby-plugin-compile-es6-packages "^2.1.0"
-    gatsby-plugin-emotion "^4.1.16"
-    gatsby-plugin-mdx "^1.0.59"
+    gatsby-plugin-emotion "^4.1.21"
+    gatsby-plugin-mdx "^1.0.69"
     gatsby-plugin-meta-redirect "^1.1.1"
     gatsby-plugin-og-image "0.0.1"
     gatsby-plugin-redirects "^1.0.0"
     gatsby-plugin-theme-ui "^0.2.43"
-    gatsby-source-filesystem "^2.1.40"
+    gatsby-source-filesystem "^2.1.47"
     is-present "^1.0.0"
     react-feather "^1.1.6"
     theme-ui "^0.2.49"
