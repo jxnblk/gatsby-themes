@@ -31,7 +31,7 @@
     "gatsby-plugin-mdx": "^1.0.13",
     "gatsby-source-filesystem": "^2.1.5",
     "lodash.get": "^4.4.2",
-    "mkdirp": "^0.5.1"
+    "mkdirp": "^1.0.3"
   },
   "repository": "jxnblk/gatsby-themes"
 }
