@@ -18,7 +18,7 @@
     "gatsby-source-filesystem": "^2.0.29",
     "gatsby-transformer-yaml": "^2.1.11",
     "lodash.groupby": "^4.6.0",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^1.0.3",
     "react-feather": "^2.0.3",
     "theme-ui": "^0.2.16"
   },
