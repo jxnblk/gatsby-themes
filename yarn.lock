@@ -2274,10 +2274,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@theme-ui/custom-properties@^0.2.29":
-  version "0.2.40"
-  resolved "https://registry.yarnpkg.com/@theme-ui/custom-properties/-/custom-properties-0.2.40.tgz#844c0495fe1292c1be82bca4f463cbe2e917d5d1"
-  integrity sha512-KkFQW7sUDE8F5baDWWSwikk9o4QcvESgBWgboOoH13UWnCj56c+o7hfwP85EuPOdlnxbyXGO+VQEB3T+mX5T+g==
+"@theme-ui/custom-properties@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@theme-ui/custom-properties/-/custom-properties-0.3.0.tgz#ce3b1da5311d94eb784292bb3ee8e30af3df053a"
+  integrity sha512-8XmOQdgmBENEKLaYNskf+1Ac0+IJajlUfk1NyA2EhwXmsLSAMRMQVW3HKSgjBA9mSEhjUq1axyLQEnt9fJr6wA==
   dependencies:
     pluralize "^8.0.0"
 
