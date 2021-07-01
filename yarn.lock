@@ -8594,13 +8594,13 @@ gatsby-transformer-sharp@^2.3.16:
     sharp "^0.23.4"
 
 gatsby-transformer-yaml@^2.1.11:
-  version "2.4.8"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-yaml/-/gatsby-transformer-yaml-2.4.8.tgz#ac04707c964f92b4c8e3d7b1523413fa564e683b"
-  integrity sha512-G4+xuVc1g9/n0GhAkyb8LRv4z07PLWvx+xmeqoMRyqpRBBZD3M64ReVP6uDtlnzrEQQPCv9uO2YxgxWGMVkgFQ==
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-yaml/-/gatsby-transformer-yaml-2.11.0.tgz#b99377e2feaec20df4c1a90cce6cb28aa7c929fb"
+  integrity sha512-+PTsnXdmKUbqqZH1cE3SnrDHKxE0ElNRGBDoDQjuz/ip5EnIcxHRj/nnzUA6RkcZ/a9UB4e2xaNOZAJbwDyqKg==
   dependencies:
-    "@babel/runtime" "^7.10.3"
-    js-yaml "^3.14.0"
-    lodash "^4.17.15"
+    "@babel/runtime" "^7.12.5"
+    js-yaml "^3.14.1"
+    lodash "^4.17.20"
     unist-util-select "^1.5.0"
 
 gatsby@*, gatsby@^2.1.19, gatsby@^2.13.23, gatsby@^2.13.30, gatsby@^2.13.31, gatsby@^2.13.36, gatsby@^2.3.23:
@@ -10646,10 +10646,10 @@ js-tokens@^3.0.2:
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
   integrity sha1-mGbfOVECEw449/mWvOtlRDIJwls=
 
-js-yaml@^3.10.0, js-yaml@^3.11.0, js-yaml@^3.13.1, js-yaml@^3.14.0, js-yaml@^3.5.2:
-  version "3.14.0"
-  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.14.0.tgz#a7a34170f26a21bb162424d8adacb4113a69e482"
-  integrity sha512-/4IbIeHcD9VMHFqDR/gQ7EdZdLimOvW2DdcxFjdyyZ9NsbS+ccrXqVWDtab/lRl5AlUqmpBx8EhPaWR+OtY17A==
+js-yaml@^3.10.0, js-yaml@^3.11.0, js-yaml@^3.13.1, js-yaml@^3.14.1, js-yaml@^3.5.2:
+  version "3.14.1"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.14.1.tgz#dae812fdb3825fa306609a8717383c50c36a0537"
+  integrity sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
