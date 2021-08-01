@@ -3353,10 +3353,10 @@
   dependencies:
     csstype "^2.5.7"
 
-"@theme-ui/custom-properties@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@theme-ui/custom-properties/-/custom-properties-0.3.0.tgz#ce3b1da5311d94eb784292bb3ee8e30af3df053a"
-  integrity sha512-8XmOQdgmBENEKLaYNskf+1Ac0+IJajlUfk1NyA2EhwXmsLSAMRMQVW3HKSgjBA9mSEhjUq1axyLQEnt9fJr6wA==
+"@theme-ui/custom-properties@^0.10.1":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@theme-ui/custom-properties/-/custom-properties-0.10.1.tgz#f0cbfc30632aa20c65c80ed10df7618ccd970325"
+  integrity sha512-pr5q8et0iaCVNV7fJQ2yKvq/gBLG9KIM5jnX3p0NaPQ1OmMCUKfmEAQp8ZuvY0BhwRK6S2K1HSPrg1JzmJtU0w==
   dependencies:
     pluralize "^8.0.0"
 

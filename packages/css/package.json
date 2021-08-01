@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.14",
-    "@theme-ui/custom-properties": "^0.3.0",
+    "@theme-ui/custom-properties": "^0.10.1",
     "gatsby-plugin-catch-links": "^2.1.2",
     "gatsby-theme-blog-core": "^1.1.0",
     "lodash.get": "^4.4.2",
